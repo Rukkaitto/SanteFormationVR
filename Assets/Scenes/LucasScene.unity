@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &96491095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2912562167280531780, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+  m_PrefabInstance: {fileID: 2912562167217598227}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f307ff58b45a704fbb6cdd029c7a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &131196545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4658771346061256, guid: e201a24a09e942042b93390d0444d728, type: 3}
@@ -1891,6 +1902,63 @@ MonoBehaviour:
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
   pitchKeys: 3401000033010000
+--- !u!1001 &2912562167217598227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2912562167280531776, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_Name
+      value: Brain
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.801
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.814
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.298
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912562167280531782, guid: f409944df3f0fa641908ded25b40af65, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f409944df3f0fa641908ded25b40af65, type: 3}
 --- !u!1001 &3572971716166545903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,9 +2024,37 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 907232370}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 96491095}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ScaleUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Scalable, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210341901475238399, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7210341901938401980, guid: 58440efdce4b1c04390bb6b6779d9ec4, type: 3}
       propertyPath: m_Name
       value: Button
