@@ -30,8 +30,6 @@ namespace OculusSampleFramework
 		private OVRSkeletonRenderer[] _handSkeletonRenderer = new OVRSkeletonRenderer[(int)OVRHand.Hand.HandRight + 1];
 		private OVRMesh[] _handMesh = new OVRMesh[(int)OVRHand.Hand.HandRight + 1];
 		private OVRMeshRenderer[] _handMeshRenderer = new OVRMeshRenderer[(int)OVRHand.Hand.HandRight + 1];
-		private SkinnedMeshRenderer _leftMeshRenderer = null;
-		private SkinnedMeshRenderer _rightMeshRenderer = null;
 		private GameObject _leftSkeletonVisual = null;
 		private GameObject _rightSkeletonVisual = null;
 		private float _currentHandAlpha = 1.0f;
@@ -187,8 +185,6 @@ namespace OculusSampleFramework
 			RightHandSkeletonRenderer = _rightHand.GetComponent<OVRSkeletonRenderer>();
 			RightHandMesh = _rightHand.GetComponent<OVRMesh>();
 			RightHandMeshRenderer = _rightHand.GetComponent<OVRMeshRenderer>();
-			_leftMeshRenderer = LeftHand.GetComponent<SkinnedMeshRenderer>();
-			_rightMeshRenderer = RightHand.GetComponent<SkinnedMeshRenderer>();
 			StartCoroutine(FindSkeletonVisualGameObjects());
 		}
 
@@ -207,8 +203,6 @@ namespace OculusSampleFramework
 					_currentHandAlpha = 1.0f;
 					break;
 			}
-			_rightMeshRenderer.sharedMaterial.SetFloat(HandAlphaId, _currentHandAlpha);
-			_leftMeshRenderer.sharedMaterial.SetFloat(HandAlphaId, _currentHandAlpha);
 		}
 
 		private IEnumerator FindSkeletonVisualGameObjects()
@@ -253,26 +247,20 @@ namespace OculusSampleFramework
 			{
 				case HandsVisualMode.Mesh:
 					RightHandMeshRenderer.enabled = true;
-					_rightMeshRenderer.enabled = true;
 					_rightSkeletonVisual.gameObject.SetActive(false);
 					LeftHandMeshRenderer.enabled = true;
-					_leftMeshRenderer.enabled = true;
 					_leftSkeletonVisual.gameObject.SetActive(false);
 					break;
 				case HandsVisualMode.Skeleton:
 					RightHandMeshRenderer.enabled = false;
-					_rightMeshRenderer.enabled = false;
 					_rightSkeletonVisual.gameObject.SetActive(true);
 					LeftHandMeshRenderer.enabled = false;
-					_leftMeshRenderer.enabled = false;
 					_leftSkeletonVisual.gameObject.SetActive(true);
 					break;
 				case HandsVisualMode.Both:
 					RightHandMeshRenderer.enabled = true;
-					_rightMeshRenderer.enabled = true;
 					_rightSkeletonVisual.gameObject.SetActive(true);
 					LeftHandMeshRenderer.enabled = true;
-					_leftMeshRenderer.enabled = true;
 					_leftSkeletonVisual.gameObject.SetActive(true);
 					break;
 				default:
