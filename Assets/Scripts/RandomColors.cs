@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class RandomColors : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Material baseMaterial;
     void Start()
     {
-        
+        foreach (Transform child in transform)
+        {
+            GameObject model = child.GetChild(0).gameObject;
+            Renderer modelRenderer = model.GetComponent<Renderer>();
+            modelRenderer.material = baseMaterial;
+            float randomHue = Random.Range(0.0f, 1.0f);
+            modelRenderer.material.color = Color.HSVToRGB(randomHue, 0.5f, 1.0f);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
