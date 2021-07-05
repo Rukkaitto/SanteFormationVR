@@ -22,7 +22,7 @@ public class PhysicsButton : MonoBehaviour
 
     void Update()
     {
-        if (GetValue() + threshold >= 1)
+        if (!_isPressed && GetValue() + threshold >= 1)
         {
             Pressed();
         }
