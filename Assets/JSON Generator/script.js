@@ -81,20 +81,24 @@ function newAnswer(context){
 }
 
 function Export(){
-    let quizz = {}
+    let quizz = []
     
     let question = document.querySelectorAll('.question')
     question.forEach(q => {
-        quizz[q.id] = {
-            question : q.querySelector('#question').value,
-            answers : {}
-        }
-        answers = document.querySelectorAll('.answer');
+        let a = []
+        answers = q.querySelectorAll('.answer');
         answers.forEach(e => {
-            let a = e.querySelector('.answer-name').value
-            let v = e.querySelector('input[type=radio]:checked').value
-            quizz[q.id].answers[a] = v;
+            a.push({
+                name: e.querySelector('.answer-name').value,
+                value: e.querySelector('input[type=radio]:checked').value
+            })
         });
+        let o = {
+            question: q.querySelector('#question').value,
+            answers: a
+        }
+        quizz.push(o)
+       
     });
 
     exportToJsonFile(quizz)
