@@ -9,6 +9,7 @@ document.querySelector('#export').addEventListener('click', () => {
 
 var q = 0;
 var id = 0;
+newQuestion()
 
 
 function newQuestion(){
