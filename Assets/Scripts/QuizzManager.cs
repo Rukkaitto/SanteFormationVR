@@ -6,6 +6,7 @@ using TMPro;
 
 public class QuizzManager : MonoBehaviour
 {
+    [HideInInspector]
     public Quizz quizz;
     public TextAsset data;
     int questionIndex = 0;
@@ -16,6 +17,10 @@ public class QuizzManager : MonoBehaviour
     public GameObject canvas;
     Answer[] userAnswer;
     public GameObject button; 
+
+    private void Awake() {
+        quizz = JsonUtility.FromJson<Quizz>(data.ToString());
+    }
 
     void Start()
     {
@@ -28,6 +33,7 @@ public class QuizzManager : MonoBehaviour
         quizz = JsonUtility.FromJson<Quizz>(json);
 
     }
+
 
     void NextQuestion()
     {
