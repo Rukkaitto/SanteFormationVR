@@ -7,7 +7,7 @@ using TMPro;
 public class QuizzManager : MonoBehaviour
 {
     public Quizz quizz;
-    TextAsset json;
+    public TextAsset data;
     //int questionIndex = 0;
     Question currentQuestion;
     List<Question> questions = new List<Question>();
@@ -39,6 +39,13 @@ public class QuizzManager : MonoBehaviour
         questions.Add(q1);    
         questions.Add(q2);    
         NextQuestion();*/
+
+        LoadJSON();
+    }
+
+    private void LoadJSON(){
+        string json = data.ToString();
+        quizz = JsonUtility.FromJson<Quizz>(json);
     }
 
     void NextQuestion()
