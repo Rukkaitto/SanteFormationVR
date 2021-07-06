@@ -1,5 +1,3 @@
-using UnityEngine;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,12 +9,12 @@ public class QuizzManager : MonoBehaviour
     TextAsset json;
     //int questionIndex = 0;
     Question currentQuestion;
-    //List<Question> questions = new List<Question>();
+    List<Question> questions = new List<Question>();
 
-[System.Serializable]
-public class Answer{
-    public string answer;
-    public bool value;
+    public TMP_Text questionText;
+    public GameObject canvas;
+    Dictionary<string, bool> userAnswer;
+    public GameObject button; 
 
     void Start()
     {
@@ -29,20 +27,22 @@ public class Answer{
         an1.Add("Dddd", false);
         q1.answers = an1;
 
-[System.Serializable]
-public class Question{
+        Question q2 = new Question();
+        q2.label = "Une autre question de test un peu plus longue";
+        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
+        an2.Add("A", true);
+        an2.Add("B", false);
 
-    public string question;
-    public Answer[] answers;
+        q2.answers = an2;
 
         questions.Add(q1);    
         questions.Add(q2);    
         NextQuestion();*/
     }
-}
 
-[System.Serializable]
-public class Quizz {
+    void NextQuestion()
+    {
+        
 
         /*currentQuestion = questions[questionIndex];
         userAnswer = currentQuestion.answers;
@@ -95,9 +95,6 @@ public class Quizz {
         // }
     }
 
-    [SerializeField]
-    public Quizz quizz;
-    private string json;
 
     // private IEnumerator Countdown(float duration)
     // {
