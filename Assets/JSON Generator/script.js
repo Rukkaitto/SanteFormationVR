@@ -81,24 +81,25 @@ function newAnswer(context){
 }
 
 function Export(){
-    let quizz = []
+    let quizz = {
+        questions: []
+    }
     
-    let question = document.querySelectorAll('.question')
+    let question = document.querySelectorAll('.question');
     question.forEach(q => {
-        let a = []
+        let a = [];
         answers = q.querySelectorAll('.answer');
         answers.forEach(e => {
             a.push({
-                name: e.querySelector('.answer-name').value,
+                answer: e.querySelector('.answer-name').value,
                 value: e.querySelector('input[type=radio]:checked').value
-            })
+            });
         });
         let o = {
             question: q.querySelector('#question').value,
             answers: a
         }
-        quizz.push(o)
-       
+        quizz.questions.push(o);
     });
 
     exportToJsonFile(quizz)

@@ -26,18 +26,26 @@ public class Question{
     }
 }
 
+[System.Serializable]
+public class Quizz {
 
-public class Quizz : MonoBehaviour {
+    public Question[] questions;
 
-    [SerializeField]
-    private Question[] quizz;
-
-    private void Start() {
-        
+    public Quizz(Question[] m_question){
+        questions = m_question;
     }
 
-    private void Update() {
-        
+}
+
+
+public class QuizzManager : MonoBehaviour {
+
+    [SerializeField]
+    public Quizz quizz;
+    private string json;
+
+    private void Start() {
+        quizz = JsonUtility.FromJson<Quizz>(json);
     }
     
 }
