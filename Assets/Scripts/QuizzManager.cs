@@ -6,8 +6,9 @@ using TMPro;
 
 public class QuizzManager : MonoBehaviour
 {
+    [HideInInspector]
     public Quizz quizz;
-    TextAsset json;
+    public TextAsset data;
     //int questionIndex = 0;
     Question currentQuestion;
     List<Question> questions = new List<Question>();
@@ -17,10 +18,38 @@ public class QuizzManager : MonoBehaviour
     Dictionary<string, bool> userAnswer;
     public GameObject button; 
 
+    private void Awake() {
+        quizz = JsonUtility.FromJson<Quizz>(data.ToString());
+    }
+
     void Start()
     {
-        NextQuestion();
+        Debug.Log(quizz.GetQuestion(0).getName());
+
+        /*Question q1 = new Question();
+        q1.label = "Une question de test";
+        Dictionary<string, bool> an1 = new Dictionary<string, bool>();
+        an1.Add("Aaa", true);
+        an1.Add("Bbbb", false);
+        an1.Add("Cccc", true);
+        an1.Add("Dddd", false);
+        q1.answers = an1;
+
+        Question q2 = new Question();
+        q2.label = "Une autre question de test un peu plus longue";
+        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
+        an2.Add("A", true);
+        an2.Add("B", false);
+
+        q2.answers = an2;
+
+        questions.Add(q1);    
+        questions.Add(q2);    
+        NextQuestion();*/
+
+
     }
+
 
     void NextQuestion()
     {
