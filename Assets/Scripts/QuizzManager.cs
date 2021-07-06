@@ -1,109 +1,51 @@
+using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
-public class QuizzManager : MonoBehaviour
-{
-    TextAsset json;
-    int questionIndex = 0;
-    Question currentQuestion;
-    List<Question> questions = new List<Question>();
+[System.Serializable]
+public class Answer{
+    public string answer;
+    public bool value;
 
-    public TMP_Text questionText;
-    public GameObject canvas;
-    Dictionary<string, bool> userAnswer;
-    public GameObject button; 
+    public Answer(string m_answer, bool m_value){
+        answer = m_answer;
+        value = m_value;
+    }
+}
 
-    void Start()
-    {
-        Question q1 = new Question();
-        q1.label = "Une question de test";
-        Dictionary<string, bool> an1 = new Dictionary<string, bool>();
-        an1.Add("Aaa", true);
-        an1.Add("Bbbb", false);
-        an1.Add("Cccc", true);
-        an1.Add("Dddd", false);
-        q1.answers = an1;
+[System.Serializable]
+public class Question{
 
-        Question q2 = new Question();
-        q2.label = "Une autre question de test un peu plus longue";
-        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
-        an2.Add("A", true);
-        an2.Add("B", false);
+    public string question;
+    public Answer[] answers;
 
-        q2.answers = an2;
+    public Question(string m_question, Answer[] m_answers){
+        question = m_question;
+        answers = m_answers;
+    }
+}
 
-        questions.Add(q1);    
-        questions.Add(q2);    
-        NextQuestion();
+[System.Serializable]
+public class Quizz {
+
+    public Question[] questions;
+
+    public Quizz(Question[] m_question){
+        questions = m_question;
     }
 
-    void NextQuestion()
-    {
-        
+}
 
-        currentQuestion = questions[questionIndex];
-        userAnswer = currentQuestion.answers;
-        List<string> keys = new List<string>(userAnswer.Keys);
-        foreach(string key in keys)
-        {
-            userAnswer[key] = false;
-        }
-  
-        questionText.text = currentQuestion.label;
-        InstantiateButtons();
-        questionIndex++;
+
+public class QuizzManager : MonoBehaviour {
+
+    [SerializeField]
+    public Quizz quizz;
+    private string json;
+
+    private void Start() {
+        quizz = JsonUtility.FromJson<Quizz>(json);
     }
-
-    public void SetAnswer(string answerLabel, bool answer)
-    {
-        foreach(var ans in userAnswer)
-            if(ans.Key == answerLabel) 
-                userAnswer[ans.Key] = answer; 
-    }
-
-    public void Validate()
-    {
-        if(currentQuestion.isCorrect(userAnswer) == true)
-        {
-            questionText.text = "Bravo!";
-        }
-        else
-        {
-            questionText.text = "T'es nul!!";
-        }
-
-        StartCoroutine(Countdown(3));
-    }
-
-    void InstantiateButtons()
-    {
-         foreach (Transform child in transform) {
-            GameObject.Destroy(child.gameObject);
-        }
-        //int canvasLength = canvas.x;
-        float testx = 0;
-        foreach(var ans in userAnswer)
-        {
-            GameObject btn = Instantiate(button, transform.position + new Vector3(testx, 0, 0), Quaternion.identity);
-            btn.GetComponentInChildren<QuizzBuzz>().answerLabel = ans.Key;
-            btn.transform.parent = transform;
-
-            testx += 0.2f;
-        }
-    }
-
-
-    private IEnumerator Countdown(float duration)
-    {
-        float normalizedTime = 0;
-        while(normalizedTime <= 1f)
-        {
-            normalizedTime += Time.deltaTime / duration;
-            yield return null;
-        }
-        NextQuestion();
-    }
+    
 }
