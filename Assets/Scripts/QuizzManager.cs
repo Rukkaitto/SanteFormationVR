@@ -18,26 +18,18 @@ public class QuizzManager : MonoBehaviour
 
     void Start()
     {
-        /*Question q1 = new Question();
+        Answer ans1 = new Answer("Une rep", true);
+        Answer ans2 = new Answer("Un truc", false);
+        Answer ans2 = new Answer("Une autre réponse", false);
+        Question q1 = new Question("Une question de test", );
         q1.label = "Une question de test";
-        Dictionary<string, bool> an1 = new Dictionary<string, bool>();
-        an1.Add("Aaa", true);
-        an1.Add("Bbbb", false);
-        an1.Add("Cccc", true);
-        an1.Add("Dddd", false);
-        q1.answers = an1;
 
-        Question q2 = new Question();
-        q2.label = "Une autre question de test un peu plus longue";
-        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
-        an2.Add("A", true);
-        an2.Add("B", false);
 
         q2.answers = an2;
 
         questions.Add(q1);    
         questions.Add(q2);    
-        NextQuestion();*/
+        NextQuestion();
     }
 
     void NextQuestion()
