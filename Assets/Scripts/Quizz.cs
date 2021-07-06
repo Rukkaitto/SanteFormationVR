@@ -25,23 +25,15 @@ public class Question{
         answers = m_answers;
     }
 
-    public bool isCorrect()
-    {
-  
 }
 
+[System.Serializable]
+public class Quizz {
 
-public class Quizz : MonoBehaviour {
+    public Question[] questions;
 
-    [SerializeField]
-    private Question[] quizz;
-
-    private void Start() {
-        
-    }
-
-    private void Update() {
-        
+    public Quizz(Question[] m_question){
+        questions = m_question;
     }
     
 }
