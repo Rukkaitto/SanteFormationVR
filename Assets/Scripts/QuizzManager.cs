@@ -6,7 +6,6 @@ using TMPro;
 
 public class QuizzManager : MonoBehaviour
 {
-    [HideInInspector]
     public Quizz quizz;
     public TextAsset data;
     //int questionIndex = 0;
