@@ -50,19 +50,17 @@ public class QuizzManager : MonoBehaviour
 
     void NextQuestion()
     {
-        
-
-        /*currentQuestion = questions[questionIndex];
-        userAnswer = currentQuestion.answers;
-        List<string> keys = new List<string>(userAnswer.Keys);
-        foreach(string key in keys)
-        {
-            userAnswer[key] = false;
-        }
+        // currentQuestion = questions[questionIndex];
+        // userAnswer = currentQuestion.answers;
+        // List<string> keys = new List<string>(userAnswer.Keys);
+        // foreach(string key in keys)
+        // {
+        //     userAnswer[key] = false;
+        // }
   
-        questionText.text = currentQuestion.label;
-        InstantiateButtons();
-        questionIndex++;*/
+        // questionText.text = currentQuestion.label;
+        // InstantiateButtons();
+        // questionIndex++;
     }
 
     public void SetAnswer(string answerLabel, bool answer)

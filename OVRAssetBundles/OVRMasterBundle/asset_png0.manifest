@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 921984168
+CRC: 1581132766
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: af2ae39b41e9d15c1cfd389eac694843
+    Hash: 14238be7e7b15ec8deaf2d3d0b9ecb07
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -13,34 +13,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/Int_MD_01_Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/Int_MD_03_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Metal_MD_02.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Surface_MD_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Metal_MD_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Metal_MD_Ao.png
-- Assets/Soja Exiles/SE Basic Assets/Textures/Concrete - texture.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Plastic_MD_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Gauge_MD.png
-- Assets/Soja Exiles/SE Basic Assets/Textures/Concrete - Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Marble_MD_01_Metalic.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Plastic_MD_Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Lamp.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Posters/Poster_MD_01.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Plastic_MD_AO.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/Int_MD_01_AO.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Fabric/Fabric_01_MD_Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Wood_MD_03_Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Lamp_Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/EXT_MD_01_Height.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Fabric/Fabric_01_MD_Hight.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Plastic_MD_Normal_02.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Thermo_MD.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Metal_MD_02_Normal.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Marble_MD_01_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Probe Covers_MD.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/Int_MD_01_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Fabric/Fabric_01_MD_AO.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Fabric/Fabric_01_MD_Albedo.png
-- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/Int_MD_03_Normal.png
+- Assets/Textures/ButtonTextureEmpty.png
+- Assets/Textures/TabletTextureEmpty.png
 Dependencies: []
