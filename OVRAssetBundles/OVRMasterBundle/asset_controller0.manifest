@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 1127257719
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cae387a80e2a4422f7634e2390c1bf85
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fdf6c57a251b9f6ec27bdd2fe01b033c
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Drawer/Z Axis/pull.controller
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Doors/openandclose1.controller
+- Assets/Soja Exiles/Hospital Medical Office Modular/Scripts & Animations/Door_MD_02.controller
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Doors/openandclose.controller
+Dependencies:
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_anim0

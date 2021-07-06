@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 2034276311
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae7103d2fab3f86fa804d06cc088b431
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af57576da81d5d3ce45807ac11234de6
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Soja Exiles/Hospital Medical Office Modular/Scripts & Animations/ddclose.anim
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Drawer/Z Axis/openpull.anim
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Doors/Closing 1.anim
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Drawer/Z Axis/closepush.anim
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Doors/Closing.anim
+- Assets/Soja Exiles/Hospital Medical Office Modular/Scripts & Animations/ddopen.anim
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Doors/Opening 1.anim
+- Assets/Soja Exiles/SE Basic Assets/Scripts and Animations/Doors/Opening.anim
+Dependencies: []

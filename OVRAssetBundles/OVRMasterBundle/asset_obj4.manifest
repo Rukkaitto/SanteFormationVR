@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 4004563926
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d78fb054a7f5e0e3301de4a564258f31
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Heart Model/MM564_BP51832_FMA7270_Trabecula carnea of right ventricle.obj
+- Assets/Organs/Heart Model/MM573_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj
+- Assets/Organs/Heart Model/MM437_BP51980_FMA3815_First anterior ventricular branch
+  of right coronary artery.obj
+- Assets/Organs/Heart Model/MM461_BP51819_FMA49299_Wall of right auricle proper.obj
+- Assets/Organs/Heart Model/MM460_BP51732_FMA9562_Superior wall of left atrium.obj
+- Assets/Organs/Heart Model/MM575_BP51701_FMA7238_Anterior leaflet of tricuspid valve.obj
+- Assets/Organs/Heart Model/MM585_BP51875_FMA9480_Anterior internodal tract.obj
+- Assets/Organs/Heart Model/MM422_BP51972_FMA3860_Diagonal branch of anterior descending
+  branch of left coronary artery.obj
+- Assets/Organs/Heart Model/MM543_BP51710_FMA7242_Anterior leaflet of mitral valve.obj
+Dependencies:
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

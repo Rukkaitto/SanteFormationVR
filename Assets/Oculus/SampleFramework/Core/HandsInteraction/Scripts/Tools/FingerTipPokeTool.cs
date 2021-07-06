@@ -142,7 +142,6 @@ namespace OculusSampleFramework
 				return;
 			}
 
-			print(IsRightHandedTool ? "Right handed tool" : "Left handed tool");
 			OVRHand hand = IsRightHandedTool ? HandsManager.Instance.RightHand : HandsManager.Instance.LeftHand;
 			float currentScale = hand.HandScale;
 			// push tool into the tip based on how wide it is. so negate the direction
