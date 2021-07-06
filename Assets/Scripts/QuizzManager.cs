@@ -19,35 +19,22 @@ public class QuizzManager : MonoBehaviour
 
     void Start()
     {
-        Answer ans1 = new Answer("Une rep", true);
-        Answer ans2 = new Answer("Un truc", false);
-        Answer ans2 = new Answer("Une autre réponse", false);
-        Question q1 = new Question("Une question de test", );
-        q1.label = "Une question de test";
-
-
-        q2.answers = an2;
-
-        questions.Add(q1);    
-        questions.Add(q2);    
         NextQuestion();
     }
 
     void NextQuestion()
     {
-        
-
-        /*currentQuestion = questions[questionIndex];
-        userAnswer = currentQuestion.answers;
-        List<string> keys = new List<string>(userAnswer.Keys);
-        foreach(string key in keys)
-        {
-            userAnswer[key] = false;
-        }
+        // currentQuestion = questions[questionIndex];
+        // userAnswer = currentQuestion.answers;
+        // List<string> keys = new List<string>(userAnswer.Keys);
+        // foreach(string key in keys)
+        // {
+        //     userAnswer[key] = false;
+        // }
   
-        questionText.text = currentQuestion.label;
-        InstantiateButtons();
-        questionIndex++;*/
+        // questionText.text = currentQuestion.label;
+        // InstantiateButtons();
+        // questionIndex++;
     }
 
     public void SetAnswer(string answerLabel, bool answer)
