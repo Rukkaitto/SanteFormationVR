@@ -6,6 +6,7 @@ using TMPro;
 
 public class QuizzManager : MonoBehaviour
 {
+    public Quizz quizz;
     TextAsset json;
     //int questionIndex = 0;
     Question currentQuestion;
