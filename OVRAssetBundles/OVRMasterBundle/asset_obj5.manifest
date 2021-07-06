@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 1016753961
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4b6b8a7a49f2de096d8ccfe4c3ec9b97
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Heart Model/MM613_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM630_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM629_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Brain Model/FJ7545M_BP58081_FMA73047_Right parafascicular nucleus.obj
+- Assets/Organs/Heart Model/MM516_BP51915_FMA84618_Anterior semilunar fibrous scallop
+  of aortic valve anulus.obj
+- Assets/Organs/Heart Model/MM556_BP51977_FMA3802_Trunk of right coronary artery.obj
+- Assets/Organs/Heart Model/MM619_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Brain Model/FJ3807_BP58109_FMA72907_Left internal capsule.obj
+- Assets/Organs/Brain Model/MM263M_BP58103_FMA72738_Right posterior parahippocampal
+  gyrus.obj
+- Assets/Organs/Heart Model/MM446_BP58391_FMA76767_Anterior cardiac vein.obj
+- Assets/Organs/Heart Model/MM584_BP51831_FMA84578_Atrial branch of anterior internodal
+  tract.obj
+- Assets/Organs/Brain Model/FJ7556_BP58106_FMA73050_Left ventral anterior nucleus.obj
+- Assets/Organs/Brain Model/MM245_BP58222_FMA72676_Left superior occipital gyrus.obj
+- Assets/Organs/Brain Model/FJ3852_BP57777_FMA72662_Left precentral gyrus.obj
+- Assets/Organs/Brain Model/MM205_BP58236_FMA78450_Left lateral ventricle.obj
+- Assets/Organs/Heart Model/MM458_BP51886_FMA84095_Septal wall of left atrium.obj
+- Assets/Organs/Heart Model/MM534_BP51828_FMA13258_Mural limb of supraventricular
+  crest.obj
+- Assets/Organs/Brain Model/MM247M_BP58216_FMA72671_Right superior parietal lobule.obj
+- Assets/Organs/Heart Model/MM419_BP51825_FMA9477_Sinuatrial node.obj
+- Assets/Organs/Brain Model/FJ1761_BP58227_FMA73464_Brachium of left inferior colliculus.obj
+- Assets/Organs/Brain Model/MM229_BP58348_FMA72936_Left lateral olfactory stria.obj
+- Assets/Organs/Heart Model/MM624_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Brain Model/FJ7540M_BP58115_FMA73006_Parvicellular part of right
+  medial dorsal nucleus.obj
+- Assets/Organs/Brain Model/MM245M_BP58187_FMA72675_Right superior occipital gyrus.obj
+- Assets/Organs/Brain Model/FJ7480M_BP58255_FMA73492_Left red nucleus.obj
+- Assets/Organs/Brain Model/MM179M_BP58075_FMA72832_Right amygdala.obj
+- Assets/Organs/Brain Model/MM247_BP58171_FMA72672_Left superior parietal lobule.obj
+- Assets/Organs/Brain Model/MM267_BP58180_FMA72684_Left superior temporal gyrus.obj
+- Assets/Organs/Brain Model/MM169M_BP58368_FMA72930_Body of right fornix of forebrain.obj
+- Assets/Organs/Heart Model/MM564_BP51832_FMA7270_Trabecula carnea of right ventricle.obj
+Dependencies:
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

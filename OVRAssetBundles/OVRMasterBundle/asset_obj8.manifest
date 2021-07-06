@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 2119734421
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 00237f6a9f7b1c107bc9fa184d8ebaa6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Brain Model/MM229M_BP58342_FMA72935_Right lateral olfactory stria.obj
+- Assets/Organs/Heart Model/MM631_BP52012_FMA9561_Inferior wall of left ventricle.obj
+- Assets/Organs/Brain Model/MM253M_BP58321_FMA72689_Right fusiform gyrus.obj
+- Assets/Organs/Brain Model/MM241_BP58034_FMA72827_Left caudate nucleus.obj
+- Assets/Organs/Brain Model/MM202_BP58124_FMA72759_Left medial orbital gyrus.obj
+- Assets/Organs/Brain Model/FJ7535M_BP58080_FMA72986_Right anteroventral nucleus.obj
+- Assets/Organs/Heart Model/MM439_BP51977_FMA3802_Trunk of right coronary artery.obj
+- Assets/Organs/Heart Model/MM634_BP51951_FMA4706_Coronary sinus.obj
+- Assets/Organs/Heart Model/MM541_BP51710_FMA7242_Anterior leaflet of mitral valve.obj
+- Assets/Organs/Brain Model/MM205M_BP58242_FMA78449_Right lateral ventricle.obj
+- Assets/Organs/Heart Model/MM448_BP51636_FMA4708_Left marginal vein.obj
+- Assets/Organs/Brain Model/MM153_BP58349_FMA62488_Induseum griseum.obj
+- Assets/Organs/Heart Model/MM426_BP51973_FMA74923_Trunk of circumflex branch of
+  left coronary artery.obj
+- Assets/Organs/Brain Model/FJ3857_BP58035_FMA72830_Right globus pallidus.obj
+- Assets/Organs/Heart Model/MM466_BP51829_FMA49298_Pectinate muscle of right auricle.obj
+- Assets/Organs/Heart Model/MM443_BP51952_FMA3851_Atrioventricular node branch of
+  right coronary artery.obj
+- Assets/Organs/Brain Model/FJ7534M_BP58107_FMA72984_Right anteromedial nucleus.obj
+- Assets/Organs/Brain Model/MM239_BP58313_FMA72704_Left anterior accessory gyrus.obj
+- Assets/Organs/Heart Model/MM449_BP51994_FMA4713_Middle cardiac vein.obj
+- Assets/Organs/Brain Model/FJ3878_BP58383_FMA61842_Septum of telencephalon.obj
+- Assets/Organs/Brain Model/FJ7543_BP58145_FMA73310_Left medial geniculate body.obj
+- Assets/Organs/Brain Model/FJ7551_BP58054_FMA73030_Left medial pulvinar nucleus.obj
+- Assets/Organs/Brain Model/MM253_BP58320_FMA72690_Left fusiform gyrus.obj
+- Assets/Organs/Brain Model/MM193_BP58215_FMA72718_Left cingulate gyrus.obj
+- Assets/Organs/Heart Model/MM425_BP51969_FMA74912_Trunk of anterior interventricular
+  branch of left coronary artery.obj
+- Assets/Organs/Heart Model/MM514_BP51916_FMA84617_Right posterior semilunar fibrous
+  scallop of aortic valve anulus.obj
+- Assets/Organs/Brain Model/MM235_BP58304_FMA72728_Left second short gyrus of insula.obj
+- Assets/Organs/Brain Model/MM176_BP58074_FMA72942_Left lateral longitudinal stria.obj
+- Assets/Organs/Brain Model/FJ3869_BP58274_FMA67943_Pons.obj
+- Assets/Organs/Brain Model/MM263_BP58132_FMA72739_Left posterior parahippocampal
+  gyrus.obj
+Dependencies:
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

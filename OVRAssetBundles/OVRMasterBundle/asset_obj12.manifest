@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 2816838502
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 87fb01e4d55731ed9f38b8316d3b7972
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Heart Model/MM587_BP51791_FMA9478_Atrioventricular node.obj
+- Assets/Organs/Brain Model/FJ3861_BP58351_FMA61975_Lamina terminalis.obj
+- Assets/Organs/Heart Model/MM573_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj
+- Assets/Organs/Brain Model/FJ7550M_BP58065_FMA73026_Right lateral pulvinar nucleus.obj
+- Assets/Organs/Brain Model/MM264_BP58108_FMA72741_Left entorhinal area.obj
+- Assets/Organs/Brain Model/MM175M_BP58058_FMA72711_Right fasciolar gyrus.obj
+- Assets/Organs/Brain Model/FJ7562M_BP58066_FMA73081_Right ventral posteromedial
+  nucleus.obj
+- Assets/Organs/Heart Model/MM585_BP51875_FMA9480_Anterior internodal tract.obj
+- Assets/Organs/Brain Model/FJ7482_BP58331_FMA73367_Right subthalamic nucleus.obj
+Dependencies:
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

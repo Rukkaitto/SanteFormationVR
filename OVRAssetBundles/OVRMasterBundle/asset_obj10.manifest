@@ -1,0 +1,67 @@
+ManifestFileVersion: 0
+CRC: 3593623740
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cd934422a60641bd9bc0758367d58e65
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Brain Model/FJ1735_BP58230_FMA73462_Brachium of left superior colliculus.obj
+- Assets/Organs/Brain Model/FJ7548_BP58060_FMA73022_Left oral pulvinar nucleus.obj
+- Assets/Organs/Heart Model/MM572_BP51918_FMA85237_Anulus proper of tricuspid valve.obj
+- Assets/Organs/Brain Model/FJ7540_BP58104_FMA73008_Parvicellular part of left medial
+  dorsal nucleus.obj
+- Assets/Organs/Brain Model/FJ7547_BP58134_FMA72989_Left paratenial nucleus.obj
+- Assets/Organs/Brain Model/FJ7529_BP58362_FMA72849_Left subcallosal area.obj
+- Assets/Organs/Heart Model/MM517_BP51924_FMA9502_Fibrous ring of aortic valve.obj
+- Assets/Organs/Brain Model/FJ7510M_BP58338_FMA73327_Right lateral preoptic nucleus.obj
+- Assets/Organs/Brain Model/MM248M_BP58190_FMA72685_Right middle temporal gyrus.obj
+- Assets/Organs/Brain Model/FJ7553_BP58223_FMA73336_Left paraventricular nucleus
+  of hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7509_BP58182_FMA73340_Left dorsomedial nucleus of hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7506_BP58188_FMA73338_Left arcuate nucleus of hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7466_BP58137_FMA72757_Left lateral orbital gyrus.obj
+- Assets/Organs/Brain Model/MM252M_BP58183_FMA72681_Right lingual gyrus.obj
+- Assets/Organs/Brain Model/MM243M_BP58202_FMA72679_Right cuneus.obj
+- Assets/Organs/Brain Model/FJ3828_BP58274_FMA67943_Pons.obj
+- Assets/Organs/Brain Model/FJ7542M_BP58139_FMA73002_Magnocellular part of right
+  medial dorsal nucleus.obj
+- Assets/Organs/Brain Model/FJ7536_BP58102_FMA73046_Left centromedian nucleus.obj
+- Assets/Organs/Heart Model/MM621_BP51834_FMA9563_Lateral wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM519_BP51879_FMA7252_Right posterior cusp of aortic
+  valve.obj
+- Assets/Organs/Brain Model/FJ3833_BP58192_FMA62327_Tuber cinereum.obj
+- Assets/Organs/Brain Model/FJ1815_BP58370_FMA74877_Mammillary body.obj
+- Assets/Organs/Heart Model/MM432_BP51962_FMA3890_Third left anterior branch of anterior
+  interventricular branch of left coronary artery.obj
+- Assets/Organs/Brain Model/FJ7534_BP58121_FMA72985_Left anteromedial nucleus.obj
+- Assets/Organs/Brain Model/FJ3868_BP58261_FMA242160_Right cerebral crus.obj
+- Assets/Organs/Heart Model/MM594_BP51936_FMA7134_Muscular part of interventricular
+  septum.obj
+- Assets/Organs/Brain Model/MM233M_BP58303_FMA72722_Right second posterior central
+  gyrus.obj
+- Assets/Organs/Brain Model/FJ7482M_BP58327_FMA73368_Left subthalamic nucleus.obj
+- Assets/Organs/Brain Model/MM261_BP58217_FMA72694_Left posterior transverse temporal
+  gyrus.obj
+- Assets/Organs/Heart Model/MM593_BP51898_FMA7108_Interatrial septum.obj
+Dependencies:
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
