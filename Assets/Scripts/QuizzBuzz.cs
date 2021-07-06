@@ -8,6 +8,8 @@ public class QuizzBuzz : MonoBehaviour
     public string answerLabel = "Sample Answer";
     private bool answer = false;
     private QuizzManager quizzManager;
+    public Material matGreen;
+    public Material matRed;
 
     private void Start() {
         quizzManager = GameObject.Find("QuizzManager").GetComponent<QuizzManager>();
@@ -24,9 +26,15 @@ public class QuizzBuzz : MonoBehaviour
     void ChangeColor(bool answer)
     {
         if(answer == true)
-            GetComponentInChildren<Renderer>().material.color = Color.green;
+        {
+            GetComponent<TextMesh>().text = "V";
+            GetComponentInChildren<Renderer>().material = matGreen;
+        }
         else
-            GetComponentInChildren<Renderer>().material.color = Color.red;
+        {
+            GetComponent<TextMesh>().text = "F";
+            GetComponentInChildren<Renderer>().material = matRed;
+        }
         
     }
 }

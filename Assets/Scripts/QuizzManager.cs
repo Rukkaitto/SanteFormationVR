@@ -8,108 +8,84 @@ public class QuizzManager : MonoBehaviour
 {
     public Quizz quizz;
     public TextAsset data;
-    //int questionIndex = 0;
+    int questionIndex = 0;
     Question currentQuestion;
     Question[] questions;
 
     public TMP_Text questionText;
     public GameObject canvas;
-    Dictionary<string, bool> userAnswer;
+    Answer[] userAnswer;
     public GameObject button; 
 
     void Start()
     {
-        /*Question q1 = new Question();
-        q1.label = "Une question de test";
-        Dictionary<string, bool> an1 = new Dictionary<string, bool>();
-        an1.Add("Aaa", true);
-        an1.Add("Bbbb", false);
-        an1.Add("Cccc", true);
-        an1.Add("Dddd", false);
-        q1.answers = an1;
-
-        Question q2 = new Question();
-        q2.label = "Une autre question de test un peu plus longue";
-        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
-        an2.Add("A", true);
-        an2.Add("B", false);
-
-        q2.answers = an2;
-
-        questions.Add(q1);    
-        questions.Add(q2);    
-        NextQuestion();*/
-
         LoadJSON();
+        NextQuestion();
     }
 
     private void LoadJSON(){
         string json = data.ToString();
         quizz = JsonUtility.FromJson<Quizz>(json);
+
     }
 
     void NextQuestion()
     {
         currentQuestion = questions[questionIndex];
+        Debug.LogError(currentQuestion.question);
         userAnswer = currentQuestion.answers;
-        List<string> keys = new List<string>(userAnswer.Keys);
-        foreach(string key in keys)
+        foreach(var ans in userAnswer)
         {
-            userAnswer[key] = false;
+            Debug.Log(ans.answer);
         }
-  
-        questionText.text = currentQuestion.label;
+
+        questionText.text = currentQuestion.question;
         InstantiateButtons();
         questionIndex++;
     }
 
     public void SetAnswer(string answerLabel, bool answer)
     {
-        // foreach(var ans in userAnswer)
-        //     if(ans.Key == answerLabel) 
-        //         userAnswer[ans.Key] = answer; 
+        foreach(var ans in userAnswer)
+            if(ans.answer == answerLabel) 
+                ans.value = answer; 
     }
 
     public void Validate()
     {
-        // if(currentQuestion.isCorrect(userAnswer) == true)
-        // {
-        //     questionText.text = "Bravo!";
-        // }
-        // else
-        // {
-        //     questionText.text = "T'es nul!!";
-        // }
-
-        // StartCoroutine(Countdown(3));
+        questionText.text = "Bravo!";
+        StartCoroutine(Countdown(3));
     }
 
     void InstantiateButtons()
     {
-        //  foreach (Transform child in transform) {
-        //     GameObject.Destroy(child.gameObject);
-        // }
-        // //int canvasLength = canvas.x;
-        // float testx = 0;
-        // foreach(var ans in userAnswer)
-        // {
-        //     GameObject btn = Instantiate(button, transform.position + new Vector3(testx, 0, 0), Quaternion.identity);
-        //     btn.GetComponentInChildren<QuizzBuzz>().answerLabel = ans.Key;
-        //     btn.transform.parent = transform;
+        float offset = 0;
 
-        //     testx += 0.2f;
-        // }
+        if(transform.childCount > 0)
+        {
+            foreach (Transform child in transform) {
+                GameObject.Destroy(child.gameObject);
+            }
+        }
+
+        foreach(var ans in userAnswer)
+        {
+            GameObject btn = Instantiate(button, transform.position + new Vector3(offset, 0, 0), Quaternion.identity);
+            btn.GetComponentInChildren<QuizzBuzz>().answerLabel = ans.answer;
+            btn.transform.parent = transform;
+            offset += 0.2f;
+        }
     }
 
 
-    // private IEnumerator Countdown(float duration)
-    // {
-    //     float normalizedTime = 0;
-    //     while(normalizedTime <= 1f)
-    //     {
-    //         normalizedTime += Time.deltaTime / duration;
-    //         yield return null;
-    //     }
-    //     NextQuestion();
-    // }
+    private IEnumerator Countdown(float duration)
+    {
+        float normalizedTime = 0;
+        while(normalizedTime <= 1f)
+        {
+            normalizedTime += Time.deltaTime / duration;
+            yield return null;
+        }
+        NextQuestion();
+    }
 }
