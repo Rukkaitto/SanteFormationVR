@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 651108828
+CRC: 3215976614
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dc8a57c2b3689605f0930cc5acd44827
+    Hash: 1f04901c6ada82e8c1a6e57e483b5b34
   TypeTreeHash:
     serializedVersion: 2
     Hash: f64856a3d606b613608cbf22df470c60
@@ -25,17 +25,17 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Organs/Heart Model/MM618_BP51868_FMA9345_Septal wall of left ventricle.obj
 - Assets/Organs/Brain Model/MM165M_BP58378_FMA62485_Periamygdaloid area.obj
-- Assets/Organs/Brain Model/FJ3788_BP58285_FMA78469_Fourth ventricle.obj
+- Assets/Organs/Brain Model/MM165_BP58378_FMA62485_Periamygdaloid area.obj
+- Assets/Organs/Heart Model/MM618_BP51868_FMA9345_Septal wall of left ventricle.obj
 - Assets/Organs/Brain Model/MM170_BP58347_FMA72927_Left anterior column of fornix.obj
 - Assets/Organs/Brain Model/FJ3853_BP58189_FMA72661_Right precentral gyrus.obj
 - Assets/Organs/Heart Model/MM452_BP51938_FMA4714_Small cardiac vein.obj
 - Assets/Organs/Brain Model/FJ7514M_BP58205_FMA73330_Left suprachiasmatic nucleus.obj
-- Assets/Organs/Brain Model/MM165_BP58378_FMA62485_Periamygdaloid area.obj
 - Assets/Organs/Brain Model/FJ7558M_BP58049_FMA73077_Oral part of right ventral posterolateral
   nucleus.obj
 - Assets/Organs/Heart Model/MM633_BP51882_FMA9542_Posterior wall of left atrium.obj
+- Assets/Organs/Brain Model/FJ3788_BP58285_FMA78469_Fourth ventricle.obj
 - Assets/Organs/Brain Model/FJ7508_BP58100_FMA73334_Left anterior nucleus of hypothalamus.obj
 - Assets/Organs/Brain Model/FJ7516M_BP58167_FMA73341_Right ventromedial nucleus of
   hypothalamus.obj
