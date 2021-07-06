@@ -1,0 +1,63 @@
+ManifestFileVersion: 0
+CRC: 3672446568
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8eabd3c0b7cdb1273cbaf584c79efe2c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Brain Model/FJ7541_BP57869_FMA73001_Paralaminar part of left medial
+  dorsal nucleus.obj
+- Assets/Organs/Brain Model/FJ3865_BP58281_FMA61993_Midbrain.obj
+- Assets/Organs/Brain Model/FJ3787_BP58267_FMA78454_Third ventricle.obj
+- Assets/Organs/Brain Model/MM170M_BP58350_FMA72926_Right anterior column of fornix.obj
+- Assets/Organs/Brain Model/FJ3819_BP58351_FMA61975_Lamina terminalis.obj
+- Assets/Organs/Brain Model/MM235M_BP58310_FMA72726_Right second short gyrus of insula.obj
+- Assets/Organs/Heart Model/MM462_BP51838_FMA9236_Crista terminalis.obj
+- Assets/Organs/Brain Model/MM202M_BP58110_FMA72758_Right medial orbital gyrus.obj
+- Assets/Organs/Brain Model/FJ3817_BP58266_FMA62008_Hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7560_BP58056_FMA73076_Left ventral posterolateral nucleus.obj
+- Assets/Organs/Brain Model/FJ3847_BP58240_FMA62033_Pineal body.obj
+- Assets/Organs/Brain Model/MM250M_BP58095_FMA72667_Right supramarginal gyrus.obj
+- Assets/Organs/Heart Model/MM423_BP51965_FMA3888_Second left anterior branch of
+  anterior interventricular branch of left coronary artery.obj
+- Assets/Organs/Heart Model/MM557_BP58405_FMA4685_Stem of left coronary artery.obj
+- Assets/Organs/Brain Model/FJ7543M_BP58117_FMA73309_Right medial geniculate body.obj
+- Assets/Organs/Heart Model/MM542_BP51793_FMA7243_Posterior leaflet of mitral valve.obj
+- Assets/Organs/Brain Model/MM155_BP58361_FMA77627_Medial olfactory stria.obj
+- Assets/Organs/Brain Model/FJ7481M_BP58260_FMA73540_Left substantia nigra.obj
+- Assets/Organs/Brain Model/FJ3800_BP58237_FMA62032_Habenula.obj
+- Assets/Organs/Heart Model/MM437_BP51980_FMA3815_First anterior ventricular branch
+  of right coronary artery.obj
+- Assets/Organs/Heart Model/MM461_BP51819_FMA49299_Wall of right auricle proper.obj
+- Assets/Organs/Heart Model/MM460_BP51732_FMA9562_Superior wall of left atrium.obj
+- Assets/Organs/Brain Model/FJ7539_BP57815_FMA73304_Left lateral geniculate body.obj
+- Assets/Organs/Brain Model/FJ3850_BP58212_FMA72665_Right postcentral gyrus.obj
+- Assets/Organs/Heart Model/MM575_BP51701_FMA7238_Anterior leaflet of tricuspid valve.obj
+- Assets/Organs/Brain Model/FJ7465M_BP58144_FMA256198_Right anterior orbital gyrus.obj
+- Assets/Organs/Heart Model/MM422_BP51972_FMA3860_Diagonal branch of anterior descending
+  branch of left coronary artery.obj
+- Assets/Organs/Brain Model/FJ7513M_BP57850_FMA73353_Right posterior nucleus of hypothalamus.obj
+- Assets/Organs/Heart Model/MM543_BP51710_FMA7242_Anterior leaflet of mitral valve.obj
+- Assets/Organs/Heart Model/MM558_BP51975_FMA15098_Wall of bulb of aorta.obj
+Dependencies:
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

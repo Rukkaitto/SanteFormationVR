@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 634542293
+CRC: 586262638
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 894564d2e20f895345c307f295e0e150
+    Hash: ecf2827d5176e29bc63fad3284f89d41
   TypeTreeHash:
     serializedVersion: 2
     Hash: 939e20ecac0e95a3f7c5cfb3e57acb1d
@@ -17,37 +17,19 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Soja Exiles/SE Basic Assets/Materials/Glow.mat
 - Assets/Materials/Hands.mat
-- Assets/Soja Exiles/SE Basic Assets/Materials/Glass.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Metal_MD_01.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Wood_MD_03.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Prob Covers_MD.mat
+- Assets/Materials/Orange.mat
+- Assets/Materials/TabletMaterial.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/TargetMaterial.mat
 - Assets/Materials/ButtonBase.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Int_Ext/Int_MD_01.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Fabric/Fabric_MD_08.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Metal_MD_02.mat
-- Packages/com.unity.render-pipelines.universal/Runtime/Materials/TerrainLit.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Beige_MD.mat
-- Assets/Materials/OrganPartMaterial.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/RayMaterial.mat
 - Assets/Materials/Skybox_Mat.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Int_Ext/Int_MD_03.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Fabric/Fabric_MD_07.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Metal_MD_03.mat
-- Assets/Soja Exiles/SE Basic Assets/Materials/glass 02.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Pastic_MD_05.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Marble_MD_02.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Int_Ext/EXT_MD_01.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Gauge.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Plastic_MD_02.mat
+- Assets/Materials/OrganPartMaterial.mat
 - Assets/Materials/Blue.mat
-- Assets/Soja Exiles/SE Basic Assets/Materials/Concrete.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/White.mat
+- Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials/PokeMaterial.mat
+- Assets/Materials/ButtonMaterial.mat
 - Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
-- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Lamp_MD_01.mat
-- Assets/Soja Exiles/SE Basic Assets/Materials/Black.mat
 - Assets/Materials/Ball.mat
 Dependencies:
-- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_png0
-- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_png1
-- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
