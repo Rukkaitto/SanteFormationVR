@@ -8,10 +8,11 @@ public class ExplodeOrgan : MonoBehaviour
 {
     private Transform _currentOrgan;
     private bool _isExploded = false;
+    public float spreadFactor = 0.3f;
 
     void Start()
     {
-        _currentOrgan =  GameObject.Find("CurrentOrgan").transform.GetChild(0);
+
     }
 
     public void Explode()
@@ -19,32 +20,22 @@ public class ExplodeOrgan : MonoBehaviour
         
         if (!_isExploded)
         {
-            Debug.Log("Nombre d_objets 3D " + _currentOrgan.childCount);
 
             _currentOrgan.GetComponent<SphereCollider>().enabled = false;
             _currentOrgan.GetComponent<OVRGrabbable>().enabled = false;
-
-            Vector3 exploded = UnityEngine.Random.insideUnitSphere;
-            Debug.Log(exploded);
-
-            foreach (Transform obj3d in _currentOrgan)
+            
+            foreach (Transform obj3d in transform)
             {
-                Debug.Log(obj3d.gameObject.name);
+                GameObject model = obj3d.GetChild(0).gameObject;
 
-                obj3d.gameObject.AddComponent<SphereCollider>();
-                Debug.Log("SphereCollider ajoute !");
+                Vector3 randomVector = Vector3.ClampMagnitude(UnityEngine.Random.insideUnitSphere * 100, spreadFactor);
+                model.transform.position += new Vector3(randomVector.x, randomVector.y, randomVector.z);
 
-                obj3d.gameObject.AddComponent<OVRGrabbable>();
-                Debug.Log("OVRGrabbable ajoute !");
+                model.gameObject.AddComponent<SphereCollider>();
 
-                obj3d.gameObject.AddComponent<Rigidbody>().isKinematic = true;
-                Debug.Log("Rigidbody ajoute !");
+                model.gameObject.AddComponent<OVRGrabbable>();
 
-                transform.position = exploded;
-
-                //float angle = Vector3.Angle(organCenter, obj3d.localPosition);
-                //Vector3 target = Quaternion.Euler(angle, 0, 0) * Vector3.forward;
-                //obj3d.position += target;
+                model.gameObject.AddComponent<Rigidbody>().isKinematic = true;
 
                 Debug.Log("Transformation modifiee !");
             }
