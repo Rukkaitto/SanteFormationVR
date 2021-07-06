@@ -4204,7 +4204,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1475673709}
   - component: {fileID: 1475673708}
-  - component: {fileID: 1475673707}
   m_Layer: 0
   m_Name: Quizz
   m_TagString: Untagged
@@ -4212,19 +4211,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1475673707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475673706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb577cdabc9c6b54eb6a4a1a9e9c19a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: f0a2ec26ef0a47b429608abc21f00d9e, type: 3}
 --- !u!114 &1475673708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4238,20 +4224,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quizz:
-    questions:
-    - question: q1
-      answers:
-      - answer: a1
-        value: 0
-      - answer: a2
-        value: 1
-    - question: q2
-      answers:
-      - answer: a1
-        value: 0
-      - answer: a2
-        value: 1
-  json: 
+    questions: []
+  data: {fileID: 4900000, guid: f0a2ec26ef0a47b429608abc21f00d9e, type: 3}
+  questionText: {fileID: 0}
+  canvas: {fileID: 0}
+  button: {fileID: 0}
 --- !u!4 &1475673709
 Transform:
   m_ObjectHideFlags: 0
