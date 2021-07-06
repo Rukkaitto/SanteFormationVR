@@ -6,6 +6,7 @@ using TMPro;
 
 public class QuizzManager : MonoBehaviour
 {
+    public Quizz quizz;
     TextAsset json;
     //int questionIndex = 0;
     Question currentQuestion;
@@ -18,43 +19,22 @@ public class QuizzManager : MonoBehaviour
 
     void Start()
     {
-        /*Question q1 = new Question();
-        q1.label = "Une question de test";
-        Dictionary<string, bool> an1 = new Dictionary<string, bool>();
-        an1.Add("Aaa", true);
-        an1.Add("Bbbb", false);
-        an1.Add("Cccc", true);
-        an1.Add("Dddd", false);
-        q1.answers = an1;
-
-        Question q2 = new Question();
-        q2.label = "Une autre question de test un peu plus longue";
-        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
-        an2.Add("A", true);
-        an2.Add("B", false);
-
-        q2.answers = an2;
-
-        questions.Add(q1);    
-        questions.Add(q2);    
-        NextQuestion();*/
+        NextQuestion();
     }
 
     void NextQuestion()
     {
-        
-
-        /*currentQuestion = questions[questionIndex];
-        userAnswer = currentQuestion.answers;
-        List<string> keys = new List<string>(userAnswer.Keys);
-        foreach(string key in keys)
-        {
-            userAnswer[key] = false;
-        }
+        // currentQuestion = questions[questionIndex];
+        // userAnswer = currentQuestion.answers;
+        // List<string> keys = new List<string>(userAnswer.Keys);
+        // foreach(string key in keys)
+        // {
+        //     userAnswer[key] = false;
+        // }
   
-        questionText.text = currentQuestion.label;
-        InstantiateButtons();
-        questionIndex++;*/
+        // questionText.text = currentQuestion.label;
+        // InstantiateButtons();
+        // questionIndex++;
     }
 
     public void SetAnswer(string answerLabel, bool answer)
