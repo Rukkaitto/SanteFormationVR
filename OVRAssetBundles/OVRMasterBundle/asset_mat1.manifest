@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 177821647
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 448a7c7f77ae04760922334e3aa07507
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 939e20ecac0e95a3f7c5cfb3e57acb1d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Metal_MD_04.mat
+- Assets/Soja Exiles/Hospital Medical Office Modular/Materials/Misc/Thermometer.mat
+Dependencies:
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_png1
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

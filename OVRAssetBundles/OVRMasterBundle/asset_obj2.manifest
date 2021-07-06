@@ -1,0 +1,69 @@
+ManifestFileVersion: 0
+CRC: 3353555495
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ad48cd95c22cb4aa92f93f82cd84c278
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Heart Model/MM628_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM636_BP51794_FMA7264_Anterior papillary muscle of left
+  ventricle.obj
+- Assets/Organs/Heart Model/MM586_BP51792_FMA9484_Atrioventricular bundle.obj
+- Assets/Organs/Heart Model/MM572_BP51918_FMA85237_Anulus proper of tricuspid valve.obj
+- Assets/Organs/Heart Model/MM452_BP51938_FMA4714_Small cardiac vein.obj
+- Assets/Organs/Heart Model/MM633_BP51882_FMA9542_Posterior wall of left atrium.obj
+- Assets/Organs/Heart Model/MM517_BP51924_FMA9502_Fibrous ring of aortic valve.obj
+- Assets/Organs/Heart Model/MM532_BP51848_FMA7272_Septomarginal trabecula.obj
+- Assets/Organs/Heart Model/MM625_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM463_BP51689_FMA9240_Valve of inferior vena cava.obj
+- Assets/Organs/Heart Model/MM580_BP51788_FMA9488_Anterior division of left branch
+  of atrioventricular bundle.obj
+- Assets/Organs/Heart Model/MM579_BP51789_FMA83331_Septal division of left branch
+  of atrioventricular bundle.obj
+- Assets/Organs/Heart Model/MM506_BP51985_FMA23733_Ascending aorta proper.obj
+- Assets/Organs/Heart Model/MM616_BP52012_FMA9561_Inferior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM621_BP51834_FMA9563_Lateral wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM592_BP51898_FMA7108_Interatrial septum.obj
+- Assets/Organs/Heart Model/MM614_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM559_BP51843_FMA49285_Anterior wall proper of right
+  atrium.obj
+- Assets/Organs/Heart Model/MM563_BP51712_FMA13257_Septal limb of supraventricular
+  crest.obj
+- Assets/Organs/Heart Model/MM551_BP51803_FMA7261_Posterior papillary muscle of right
+  ventricle.obj
+- Assets/Organs/Heart Model/MM574_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj
+- Assets/Organs/Heart Model/MM459_BP51840_FMA9547_Wall of left auricle.obj
+- Assets/Organs/Heart Model/MM577_BP51824_FMA9486_Right branch of atrioventricular
+  bundle.obj
+- Assets/Organs/Heart Model/MM591_BP51888_FMA84094_Septal wall of right atrium.obj
+- Assets/Organs/Heart Model/MM447_BP51947_FMA4707_Great cardiac vein.obj
+- Assets/Organs/Heart Model/MM434_BP51614_FMA3893_Anterior septal branch of anterior
+  interventricular artery.obj
+- Assets/Organs/Heart Model/MM620_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM433_BP51614_FMA3893_Anterior septal branch of anterior
+  interventricular artery.obj
+- Assets/Organs/Heart Model/MM635_BP51973_FMA74923_Trunk of circumflex branch of
+  left coronary artery.obj
+- Assets/Organs/Heart Model/MM618_BP51868_FMA9345_Septal wall of left ventricle.obj
+Dependencies:
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

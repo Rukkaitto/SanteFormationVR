@@ -1,0 +1,71 @@
+ManifestFileVersion: 0
+CRC: 2861841494
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d61a894f85511a10cd256924ee55f912
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Heart Model/MM626_BP52012_FMA9561_Inferior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM602_BP58389_FMA84625_Posterior semilunar fibrous scallop
+  of pulmonary valve anulus.obj
+- Assets/Organs/Heart Model/MM582_BP51827_FMA9483_Posterior internodal tract.obj
+- Assets/Organs/Heart Model/MM538_BP51878_FMA49208_Wall of outflow part of right
+  ventricle.obj
+- Assets/Organs/Heart Model/MM424_BP51969_FMA74912_Trunk of anterior interventricular
+  branch of left coronary artery.obj
+- Assets/Organs/Heart Model/MM632_BP51844_FMA49292_Anterior wall proper of left atrium.obj
+- Assets/Organs/Heart Model/MM462_BP51838_FMA9236_Crista terminalis.obj
+- Assets/Organs/Heart Model/MM524_BP51927_FMA7253_Anterior cusp of aortic valve.obj
+- Assets/Organs/Heart Model/MM578_BP51790_FMA9489_Posterior division of left branch
+  of atrioventricular bundle.obj
+- Assets/Organs/Heart Model/MM627_BP51834_FMA9563_Lateral wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM444_BP51956_FMA3837_First posterior ventricular branch
+  of right coronary artery.obj
+- Assets/Organs/Heart Model/MM529_BP51899_FMA9498_Fibrous ring of mitral valve.obj
+- Assets/Organs/Heart Model/MM521_BP51864_FMA7254_Left posterior cusp of aortic valve.obj
+- Assets/Organs/Heart Model/MM569_BP51701_FMA7238_Anterior leaflet of tricuspid valve.obj
+- Assets/Organs/Heart Model/MM423_BP51965_FMA3888_Second left anterior branch of
+  anterior interventricular branch of left coronary artery.obj
+- Assets/Organs/Heart Model/MM557_BP58405_FMA4685_Stem of left coronary artery.obj
+- Assets/Organs/Heart Model/MM440_BP51950_FMA3818_Marginal branch of right coronary
+  artery.obj
+- Assets/Organs/Heart Model/MM542_BP51793_FMA7243_Posterior leaflet of mitral valve.obj
+- Assets/Organs/Heart Model/MM604_BP51948_FMA7249_Right anterior cusp of pulmonary
+  valve.obj
+- Assets/Organs/Heart Model/MM610_BP51926_FMA3902_Left marginal artery.obj
+- Assets/Organs/Heart Model/MM623_BP52012_FMA9561_Inferior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM467_BP51841_FMA9277_Tendon of Todaro.obj
+- Assets/Organs/Heart Model/MM606_BP51921_FMA7247_Left anterior cusp of pulmonary
+  valve.obj
+- Assets/Organs/Heart Model/MM441_BP51955_FMA3807_Conus branch of right coronary
+  artery.obj
+- Assets/Organs/Heart Model/MM428_BP51610_FMA3914_First posterior ventricular branch
+  of circumflex coronary artery.obj
+- Assets/Organs/Heart Model/MM425_BP51969_FMA74912_Trunk of anterior interventricular
+  branch of left coronary artery.obj
+- Assets/Organs/Heart Model/MM544_BP51793_FMA7243_Posterior leaflet of mitral valve.obj
+- Assets/Organs/Heart Model/MM590_BP51888_FMA84094_Septal wall of right atrium.obj
+- Assets/Organs/Heart Model/MM474_BP51876_FMA84850_Free wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM558_BP51975_FMA15098_Wall of bulb of aorta.obj
+Dependencies:
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

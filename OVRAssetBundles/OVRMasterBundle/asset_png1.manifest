@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1473975614
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 26e7b2fb62920ab9f89df0e741bca301
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/EXT_MD_01_Normal.png
+- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Wood_MD_03_Height.png
+- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Wood_MD_03_Albedo.png
+- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Misc/Metal_MD_Normal.png
+- Assets/Soja Exiles/Hospital Medical Office Modular/Textures/Ext Int/EXT_MD_01.png
+Dependencies: []

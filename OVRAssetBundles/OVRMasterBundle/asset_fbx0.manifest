@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 427603291
+CRC: 2745304200
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c16e0433c9326df760e387109c5acd87
+    Hash: 2da4d60d896f3113fe6fc405b3d6e873
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e5a08a11ca3e67b0ba0c8e2a2129af5b
+    Hash: 7daa2922420b84720b5081a26bac0dba
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -14,6 +14,12 @@ ClassTypes:
 - Class: 4
   Script: {instanceID: 0}
 - Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
   Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
@@ -27,7 +33,14 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Soja Exiles/Hospital Medical Office Modular/Models/Molding_MD_01.fbx
+- Assets/Soja Exiles/SE Basic Assets/Models/Build Kits/Build Kit Exterior.fbx
+- Assets/Soja Exiles/SE Basic Assets/Models/Build Kits/Build Kit Interior Updated_01.fbx
+- Assets/Soja Exiles/Hospital Medical Office Modular/Models/diagnostics.fbx
+- Assets/Soja Exiles/Hospital Medical Office Modular/Models/Enviro_MD_01.fbx
+- Assets/Soja Exiles/Hospital Medical Office Modular/Models/Equipment_MD_01.fbx
 - Assets/Oculus/VR/Meshes/HandTracking/OculusHand_R.fbx
 - Assets/Oculus/VR/Meshes/HandTracking/OculusHand_L.fbx
 Dependencies:
-- C:/Users/tonyb/Desktop/PT Innovation/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

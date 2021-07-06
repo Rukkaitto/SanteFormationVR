@@ -20,12 +20,15 @@ public class ButtonListener : MonoBehaviour
     {
         if (state.NewInteractableState == InteractableState.ProximityState)
         {
+            print("proximity");
             proximityEvent.Invoke();
         } else if (state.NewInteractableState == InteractableState.ContactState)
         {
+            print("contact");
             contactEvent.Invoke();
         } else if (state.NewInteractableState == InteractableState.ActionState)
         {
+            print("action");
             actionEvent.Invoke();
         }
         else
