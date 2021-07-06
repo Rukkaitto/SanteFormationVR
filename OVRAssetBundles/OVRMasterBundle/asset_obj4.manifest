@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4004563926
+CRC: 651108828
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d78fb054a7f5e0e3301de4a564258f31
+    Hash: dc8a57c2b3689605f0930cc5acd44827
   TypeTreeHash:
     serializedVersion: 2
     Hash: f64856a3d606b613608cbf22df470c60
@@ -25,16 +25,40 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Organs/Heart Model/MM564_BP51832_FMA7270_Trabecula carnea of right ventricle.obj
-- Assets/Organs/Heart Model/MM573_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj
-- Assets/Organs/Heart Model/MM437_BP51980_FMA3815_First anterior ventricular branch
-  of right coronary artery.obj
-- Assets/Organs/Heart Model/MM461_BP51819_FMA49299_Wall of right auricle proper.obj
-- Assets/Organs/Heart Model/MM460_BP51732_FMA9562_Superior wall of left atrium.obj
-- Assets/Organs/Heart Model/MM575_BP51701_FMA7238_Anterior leaflet of tricuspid valve.obj
-- Assets/Organs/Heart Model/MM585_BP51875_FMA9480_Anterior internodal tract.obj
-- Assets/Organs/Heart Model/MM422_BP51972_FMA3860_Diagonal branch of anterior descending
-  branch of left coronary artery.obj
-- Assets/Organs/Heart Model/MM543_BP51710_FMA7242_Anterior leaflet of mitral valve.obj
+- Assets/Organs/Heart Model/MM618_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Brain Model/MM165M_BP58378_FMA62485_Periamygdaloid area.obj
+- Assets/Organs/Brain Model/FJ3788_BP58285_FMA78469_Fourth ventricle.obj
+- Assets/Organs/Brain Model/MM170_BP58347_FMA72927_Left anterior column of fornix.obj
+- Assets/Organs/Brain Model/FJ3853_BP58189_FMA72661_Right precentral gyrus.obj
+- Assets/Organs/Heart Model/MM452_BP51938_FMA4714_Small cardiac vein.obj
+- Assets/Organs/Brain Model/FJ7514M_BP58205_FMA73330_Left suprachiasmatic nucleus.obj
+- Assets/Organs/Brain Model/MM165_BP58378_FMA62485_Periamygdaloid area.obj
+- Assets/Organs/Brain Model/FJ7558M_BP58049_FMA73077_Oral part of right ventral posterolateral
+  nucleus.obj
+- Assets/Organs/Heart Model/MM633_BP51882_FMA9542_Posterior wall of left atrium.obj
+- Assets/Organs/Brain Model/FJ7508_BP58100_FMA73334_Left anterior nucleus of hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7516M_BP58167_FMA73341_Right ventromedial nucleus of
+  hypothalamus.obj
+- Assets/Organs/Brain Model/MM168_BP58353_FMA72933_Left posterior column of fornix.obj
+- Assets/Organs/Brain Model/FJ7510_BP58336_FMA73328_Left lateral preoptic nucleus.obj
+- Assets/Organs/Brain Model/MM156M_BP58341_FMA72955_Right diagonal band.obj
+- Assets/Organs/Heart Model/MM526_BP51892_FMA9508_Left fibrous trigone of heart.obj
+- Assets/Organs/Brain Model/FJ7512M_BP58204_FMA73335_Right paraventricular nucleus
+  of hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7553M_BP58204_FMA73335_Right paraventricular nucleus
+  of hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7548M_BP58067_FMA73021_Right oral pulvinar nucleus.obj
+- Assets/Organs/Brain Model/FJ7511M_BP58118_FMA73325_Right medial preoptic nucleus.obj
+- Assets/Organs/Heart Model/MM596_BP51666_FMA9505_Right fibrous trigone of heart.obj
+- Assets/Organs/Brain Model/MM153M_BP58349_FMA62488_Induseum griseum.obj
+- Assets/Organs/Brain Model/MM167_BP58357_FMA235004_Fimbria of left hippocampus.obj
+- Assets/Organs/Brain Model/MM169_BP58359_FMA72931_Body of left fornix of forebrain.obj
+- Assets/Organs/Heart Model/MM577_BP51824_FMA9486_Right branch of atrioventricular
+  bundle.obj
+- Assets/Organs/Heart Model/MM609_BP58397_FMA77435_Triangle of sinu-atrial node.obj
+- Assets/Organs/Heart Model/MM620_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM622_BP52012_FMA9561_Inferior wall of left ventricle.obj
+- Assets/Organs/Brain Model/FJ3876_BP58271_FMA67944_Cerebellum.obj
+- Assets/Organs/Brain Model/FJ3834_BP58271_FMA67944_Cerebellum.obj
 Dependencies:
-- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

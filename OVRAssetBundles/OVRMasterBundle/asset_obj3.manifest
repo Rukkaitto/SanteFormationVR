@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1352081795
+CRC: 1614440255
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 72e009d26114eeacb1d27cfa18bdaff2
+    Hash: e0ea790d36d48ce23627a2b9da908a54
   TypeTreeHash:
     serializedVersion: 2
     Hash: f64856a3d606b613608cbf22df470c60
@@ -25,44 +25,43 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Organs/Heart Model/MM560_BP51837_FMA49286_Lateral wall proper of right atrium.obj
-- Assets/Organs/Heart Model/MM537_BP51810_FMA7262_Septal papillary muscle of right
+- Assets/Organs/Brain Model/MM268_BP58157_FMA72688_Left inferior temporal gyrus.obj
+- Assets/Organs/Brain Model/FJ7507_BP58226_FMA73337_Right arcuate nucleus of hypothalamus.obj
+- Assets/Organs/Heart Model/MM628_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM586_BP51792_FMA9484_Atrioventricular bundle.obj
+- Assets/Organs/Heart Model/MM636_BP51794_FMA7264_Anterior papillary muscle of left
   ventricle.obj
-- Assets/Organs/Heart Model/MM615_BP51834_FMA9563_Lateral wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM613_BP51868_FMA9345_Septal wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM630_BP51868_FMA9345_Septal wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM629_BP51868_FMA9345_Septal wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM456_BP51862_FMA9306_Lateral wall of left atrium.obj
-- Assets/Organs/Heart Model/MM516_BP51915_FMA84618_Anterior semilunar fibrous scallop
-  of aortic valve anulus.obj
-- Assets/Organs/Heart Model/MM556_BP51977_FMA3802_Trunk of right coronary artery.obj
-- Assets/Organs/Heart Model/MM619_BP51868_FMA9345_Septal wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM419_BP51825_FMA9477_Sinuatrial node.obj
-- Assets/Organs/Heart Model/MM446_BP58391_FMA76767_Anterior cardiac vein.obj
-- Assets/Organs/Heart Model/MM584_BP51831_FMA84578_Atrial branch of anterior internodal
-  tract.obj
-- Assets/Organs/Heart Model/MM599_BP51796_FMA7271_Trabecula carnea of left ventricle.obj
-- Assets/Organs/Heart Model/MM562_BP51846_FMA9242_Valve of coronary sinus.obj
-- Assets/Organs/Heart Model/MM519_BP51879_FMA7252_Right posterior cusp of aortic
-  valve.obj
-- Assets/Organs/Heart Model/MM458_BP51886_FMA84095_Septal wall of left atrium.obj
-- Assets/Organs/Heart Model/MM436_BP51977_FMA3802_Trunk of right coronary artery.obj
-- Assets/Organs/Heart Model/MM534_BP51828_FMA13258_Mural limb of supraventricular
-  crest.obj
-- Assets/Organs/Heart Model/MM587_BP51791_FMA9478_Atrioventricular node.obj
-- Assets/Organs/Heart Model/MM438_BP51922_FMA3823_Sinoatrial nodal branch of right
-  coronary artery.obj
-- Assets/Organs/Heart Model/MM526_BP51892_FMA9508_Left fibrous trigone of heart.obj
-- Assets/Organs/Heart Model/MM624_BP52011_FMA9560_Anterior wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM432_BP51962_FMA3890_Third left anterior branch of anterior
-  interventricular branch of left coronary artery.obj
-- Assets/Organs/Heart Model/MM596_BP51666_FMA9505_Right fibrous trigone of heart.obj
-- Assets/Organs/Heart Model/MM594_BP51936_FMA7134_Muscular part of interventricular
-  septum.obj
-- Assets/Organs/Heart Model/MM609_BP58397_FMA77435_Triangle of sinu-atrial node.obj
-- Assets/Organs/Heart Model/MM603_BP51914_FMA84626_Left anterior semilunar fibrous
-  scallop of pulmonary valve anulus.obj
-- Assets/Organs/Heart Model/MM622_BP52012_FMA9561_Inferior wall of left ventricle.obj
-- Assets/Organs/Heart Model/MM593_BP51898_FMA7108_Interatrial septum.obj
+- Assets/Organs/Brain Model/FJ3792_BP58379_FMA61961_Anterior commissure.obj
+- Assets/Organs/Brain Model/MM240_BP58313_FMA72704_Left anterior accessory gyrus.obj
+- Assets/Organs/Heart Model/MM625_BP51868_FMA9345_Septal wall of left ventricle.obj
+- Assets/Organs/Brain Model/MM164_BP58046_FMA72714_Left hippocampus proper.obj
+- Assets/Organs/Brain Model/MM156_BP58354_FMA72956_Left diagonal band.obj
+- Assets/Organs/Brain Model/FJ1826_BP58258_FMA73422_Right superior colliculus.obj
+- Assets/Organs/Brain Model/FJ7551M_BP58069_FMA73029_Right medial pulvinar nucleus.obj
+- Assets/Organs/Brain Model/FJ7513_BP58154_FMA73354_Left posterior nucleus of hypothalamus.obj
+- Assets/Organs/Brain Model/MM267M_BP58179_FMA72683_Right superior temporal gyrus.obj
+- Assets/Organs/Brain Model/FJ7509M_BP58148_FMA73339_Right dorsomedial nucleus of
+  hypothalamus.obj
+- Assets/Organs/Brain Model/FJ7559_BP57876_FMA73080_Caudal part of left ventral posterolateral
+  nucleus.obj
+- Assets/Organs/Heart Model/MM451_BP51932_FMA4716_Right marginal vein.obj
+- Assets/Organs/Heart Model/MM430_BP58390_FMA79742_Trunk of posterior interventricular
+  branch of left coronary artery.obj
+- Assets/Organs/Brain Model/FJ3860_BP58266_FMA62008_Hypothalamus.obj
+- Assets/Organs/Heart Model/MM551_BP51803_FMA7261_Posterior papillary muscle of right
+  ventricle.obj
+- Assets/Organs/Heart Model/MM614_BP52011_FMA9560_Anterior wall of left ventricle.obj
+- Assets/Organs/Brain Model/MM178M_BP58326_FMA74414_Subiculum.obj
+- Assets/Organs/Brain Model/FJ3824_BP58281_FMA61993_Midbrain.obj
+- Assets/Organs/Heart Model/MM420_BP51969_FMA74912_Trunk of anterior interventricular
+  branch of left coronary artery.obj
+- Assets/Organs/Brain Model/FJ7554M_BP58193_FMA73323_Right thalamic reticular nucleus.obj
+- Assets/Organs/Brain Model/MM268M_BP58203_FMA72687_Right inferior temporal gyrus.obj
+- Assets/Organs/Brain Model/FJ3795_BP58000_FMA78467_Cerebral aqueduct.obj
+- Assets/Organs/Brain Model/MM155M_BP58361_FMA77627_Medial olfactory stria.obj
+- Assets/Organs/Heart Model/MM433_BP51614_FMA3893_Anterior septal branch of anterior
+  interventricular artery.obj
+- Assets/Organs/Heart Model/MM635_BP51973_FMA74923_Trunk of circumflex branch of
+  left coronary artery.obj
 Dependencies:
-- C:/Users/leGnacq/Desktop/LP_DAWIN/PT_INNOVATION/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0

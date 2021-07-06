@@ -1,46 +1,73 @@
 ManifestFileVersion: 0
-CRC: 2993803668
+CRC: 1795964312
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: asset_resources
       Dependencies: {}
     Info_1:
-      Name: scene_cedricscene
+      Name: scene_lucasscene
       Dependencies:
-        Dependency_0: asset_prefab0
-        Dependency_1: asset_lighting0
-        Dependency_2: asset_controller0
+        Dependency_0: asset_lighting0
+        Dependency_1: asset_prefab0
+        Dependency_2: asset_mat0
         Dependency_3: asset_fbx0
-        Dependency_4: asset_mat0
-        Dependency_5: asset_mat1
     Info_2:
+      Name: asset_lighting0
+      Dependencies: {}
+    Info_3:
       Name: asset_obj0
       Dependencies:
         Dependency_0: asset_shader0
-    Info_3:
+    Info_4:
       Name: asset_obj1
       Dependencies:
         Dependency_0: asset_shader0
-    Info_4:
+    Info_5:
       Name: asset_obj2
       Dependencies:
         Dependency_0: asset_shader0
-    Info_5:
+    Info_6:
       Name: asset_obj3
       Dependencies:
         Dependency_0: asset_shader0
-    Info_6:
+    Info_7:
       Name: asset_obj4
       Dependencies:
         Dependency_0: asset_shader0
-    Info_7:
-      Name: asset_png0
-      Dependencies: {}
     Info_8:
-      Name: asset_png1
-      Dependencies: {}
+      Name: asset_obj5
+      Dependencies:
+        Dependency_0: asset_shader0
     Info_9:
+      Name: asset_obj6
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_10:
+      Name: asset_obj7
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_11:
+      Name: asset_obj8
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_12:
+      Name: asset_obj9
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_13:
+      Name: asset_obj10
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_14:
+      Name: asset_obj11
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_15:
+      Name: asset_obj12
+      Dependencies:
+        Dependency_0: asset_shader0
+    Info_16:
       Name: asset_prefab0
       Dependencies:
         Dependency_0: asset_obj0
@@ -48,37 +75,27 @@ AssetBundleManifest:
         Dependency_2: asset_obj2
         Dependency_3: asset_obj3
         Dependency_4: asset_obj4
-        Dependency_5: asset_controller0
-        Dependency_6: asset_fbx0
-        Dependency_7: asset_mat0
-        Dependency_8: asset_mat1
-    Info_10:
-      Name: asset_lighting0
-      Dependencies: {}
-    Info_11:
-      Name: asset_controller0
-      Dependencies:
-        Dependency_0: asset_anim0
-    Info_12:
-      Name: asset_anim0
-      Dependencies: {}
-    Info_13:
-      Name: asset_fbx0
-      Dependencies:
-        Dependency_0: asset_png0
-        Dependency_1: asset_shader0
-    Info_14:
+        Dependency_5: asset_obj5
+        Dependency_6: asset_obj6
+        Dependency_7: asset_obj7
+        Dependency_8: asset_obj8
+        Dependency_9: asset_obj9
+        Dependency_10: asset_obj10
+        Dependency_11: asset_obj11
+        Dependency_12: asset_obj12
+        Dependency_13: asset_mat0
+    Info_17:
       Name: asset_mat0
       Dependencies:
         Dependency_0: asset_png0
-        Dependency_1: asset_png1
-        Dependency_2: asset_shader0
-    Info_15:
-      Name: asset_mat1
-      Dependencies:
-        Dependency_0: asset_png0
-        Dependency_1: asset_png1
-        Dependency_2: asset_shader0
-    Info_16:
+        Dependency_1: asset_shader0
+    Info_18:
+      Name: asset_png0
+      Dependencies: {}
+    Info_19:
       Name: asset_shader0
       Dependencies: {}
+    Info_20:
+      Name: asset_fbx0
+      Dependencies:
+        Dependency_0: asset_mat0

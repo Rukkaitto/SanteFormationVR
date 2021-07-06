@@ -1,0 +1,65 @@
+ManifestFileVersion: 0
+CRC: 1475808683
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cf95d51ed88bca8457df3458317bbf3a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Organs/Heart Model/MM560_BP51837_FMA49286_Lateral wall proper of right atrium.obj
+- Assets/Organs/Heart Model/MM537_BP51810_FMA7262_Septal papillary muscle of right
+  ventricle.obj
+- Assets/Organs/Brain Model/FJ3870_BP58039_FMA72828_Right putamen.obj
+- Assets/Organs/Heart Model/MM615_BP51834_FMA9563_Lateral wall of left ventricle.obj
+- Assets/Organs/Heart Model/MM456_BP51862_FMA9306_Lateral wall of left atrium.obj
+- Assets/Organs/Brain Model/FJ7526_BP58334_FMA223162_Left olfactory tract.obj
+- Assets/Organs/Brain Model/MM171_BP58041_FMA72716_Dentate gyrus of left hippocampus.obj
+- Assets/Organs/Brain Model/FJ7533M_BP58127_FMA72982_Right anterodorsal nucleus.obj
+- Assets/Organs/Brain Model/FJ7557_BP58061_FMA73064_Caudal part of left ventral lateral
+  nucleus.obj
+- Assets/Organs/Heart Model/MM562_BP51846_FMA9242_Valve of coronary sinus.obj
+- Assets/Organs/Brain Model/MM237M_BP58311_FMA72729_Right intermediate short gyrus
+  of insula.obj
+- Assets/Organs/Heart Model/MM599_BP51796_FMA7271_Trabecula carnea of left ventricle.obj
+- Assets/Organs/Brain Model/MM261M_BP58208_FMA72693_Right posterior transverse temporal
+  gyrus.obj
+- Assets/Organs/Brain Model/MM232_BP58307_FMA72721_Left first posterior central gyrus.obj
+- Assets/Organs/Heart Model/MM436_BP51977_FMA3802_Trunk of right coronary artery.obj
+- Assets/Organs/Brain Model/FJ7508M_BP58090_FMA73333_Right anterior nucleus of hypothalamus.obj
+- Assets/Organs/Brain Model/MM264M_BP58091_FMA72740_Right entorhinal area.obj
+- Assets/Organs/Brain Model/FJ7535_BP58086_FMA72987_Left anteroventral nucleus.obj
+- Assets/Organs/Brain Model/MM171M_BP58042_FMA72715_Dentate gyrus of right hippocampus.obj
+- Assets/Organs/Brain Model/FJ3872_BP58337_FMA72939_Right stria terminalis.obj
+- Assets/Organs/Brain Model/FJ7556M_BP58125_FMA73049_Right ventral anterior nucleus.obj
+- Assets/Organs/Heart Model/MM438_BP51922_FMA3823_Sinoatrial nodal branch of right
+  coronary artery.obj
+- Assets/Organs/Brain Model/FJ7562_BP58057_FMA73082_Left ventral posteromedial nucleus.obj
+- Assets/Organs/Brain Model/FJ7546M_BP58067_FMA73021_Right oral pulvinar nucleus.obj
+- Assets/Organs/Brain Model/MM177M_BP58077_FMA72943_Right medial longitudinal stria.obj
+- Assets/Organs/Brain Model/FJ3849_BP58224_FMA72666_Left postcentral gyrus.obj
+- Assets/Organs/Brain Model/FJ7528M_BP58098_FMA72659_Right straight gyrus.obj
+- Assets/Organs/Brain Model/FJ3808_BP57922_FMA72906_Right internal capsule.obj
+- Assets/Organs/Heart Model/MM603_BP51914_FMA84626_Left anterior semilunar fibrous
+  scallop of pulmonary valve anulus.obj
+- Assets/Organs/Brain Model/MM204_BP58176_FMA78462_Choroid plexus of third ventricle.obj
+Dependencies:
+- C:/Users/Lucas/dev/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
