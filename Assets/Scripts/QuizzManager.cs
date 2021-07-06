@@ -1,8 +1,5 @@
-using UnityEngine;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-<<<<<<< HEAD
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -12,16 +9,13 @@ public class QuizzManager : MonoBehaviour
     TextAsset json;
     //int questionIndex = 0;
     Question currentQuestion;
-    //List<Question> questions = new List<Question>();
-=======
->>>>>>> b6c1d3527da6984a56ac4680287245875a5de87f
+    List<Question> questions = new List<Question>();
 
-[System.Serializable]
-public class Answer{
-    public string answer;
-    public bool value;
+    public TMP_Text questionText;
+    public GameObject canvas;
+    Dictionary<string, bool> userAnswer;
+    public GameObject button; 
 
-<<<<<<< HEAD
     void Start()
     {
         /*Question q1 = new Question();
@@ -32,36 +26,24 @@ public class Answer{
         an1.Add("Cccc", true);
         an1.Add("Dddd", false);
         q1.answers = an1;
-=======
-    public Answer(string m_answer, bool m_value){
-        answer = m_answer;
-        value = m_value;
-    }
-}
->>>>>>> b6c1d3527da6984a56ac4680287245875a5de87f
 
-[System.Serializable]
-public class Question{
+        Question q2 = new Question();
+        q2.label = "Une autre question de test un peu plus longue";
+        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
+        an2.Add("A", true);
+        an2.Add("B", false);
 
-    public string question;
-    public Answer[] answers;
+        q2.answers = an2;
 
-<<<<<<< HEAD
         questions.Add(q1);    
         questions.Add(q2);    
         NextQuestion();*/
-=======
-    public Question(string m_question, Answer[] m_answers){
-        question = m_question;
-        answers = m_answers;
->>>>>>> b6c1d3527da6984a56ac4680287245875a5de87f
     }
-}
 
-[System.Serializable]
-public class Quizz {
+    void NextQuestion()
+    {
+        
 
-<<<<<<< HEAD
         /*currentQuestion = questions[questionIndex];
         userAnswer = currentQuestion.answers;
         List<string> keys = new List<string>(userAnswer.Keys);
@@ -112,24 +94,8 @@ public class Quizz {
         //     testx += 0.2f;
         // }
     }
-=======
-    public Question[] questions;
-
-    public Quizz(Question[] m_question){
-        questions = m_question;
-    }
-
-}
 
 
-public class QuizzManager : MonoBehaviour {
->>>>>>> b6c1d3527da6984a56ac4680287245875a5de87f
-
-    [SerializeField]
-    public Quizz quizz;
-    private string json;
-
-<<<<<<< HEAD
     // private IEnumerator Countdown(float duration)
     // {
     //     float normalizedTime = 0;
@@ -140,10 +106,4 @@ public class QuizzManager : MonoBehaviour {
     //     }
     //     NextQuestion();
     // }
-=======
-    private void Start() {
-        quizz = JsonUtility.FromJson<Quizz>(json);
-    }
-    
->>>>>>> b6c1d3527da6984a56ac4680287245875a5de87f
 }
