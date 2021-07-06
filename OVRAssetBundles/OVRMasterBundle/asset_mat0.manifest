@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3958582722
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a6598cd5102746f08d8e76d882d8de4e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5651999fa58938ac55fc849c3d2539bc
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/Hands.mat
+- Assets/Materials/ButtonBase.mat
+- Assets/Materials/Skybox_Mat.mat
+- Assets/Materials/Blue.mat
+- Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
+- Assets/Materials/Ball.mat
+Dependencies:
+- C:/Users/tonyb/Desktop/PT Innovation/SanteFormationVR/OVRAssetBundles/OVRMasterBundle/asset_shader0
