@@ -3,113 +3,191 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class QuizzManager : MonoBehaviour
 {
+    [HideInInspector]
     public Quizz quizz;
+
     public TextAsset data;
-    //int questionIndex = 0;
+    int questionIndex = 0;
     Question currentQuestion;
-    List<Question> questions = new List<Question>();
+    Question[] questions;
 
     public TMP_Text questionText;
+    public TMP_Text answerText;
     public GameObject canvas;
-    Dictionary<string, bool> userAnswer;
+    public Answer[] userAnswers;
     public GameObject button; 
+    public float score;
+
+    private Vector3 initPosition;
+
+    private void Awake() {
+        quizz = JsonUtility.FromJson<Quizz>(data.ToString());
+    }
 
     void Start()
     {
-        /*Question q1 = new Question();
-        q1.label = "Une question de test";
-        Dictionary<string, bool> an1 = new Dictionary<string, bool>();
-        an1.Add("Aaa", true);
-        an1.Add("Bbbb", false);
-        an1.Add("Cccc", true);
-        an1.Add("Dddd", false);
-        q1.answers = an1;
-
-        Question q2 = new Question();
-        q2.label = "Une autre question de test un peu plus longue";
-        Dictionary<string, bool> an2 = new Dictionary<string, bool>();
-        an2.Add("A", true);
-        an2.Add("B", false);
-
-        q2.answers = an2;
-
-        questions.Add(q1);    
-        questions.Add(q2);    
-        NextQuestion();*/
-
-        LoadJSON();
-    }
-
-    private void LoadJSON(){
-        string json = data.ToString();
-        quizz = JsonUtility.FromJson<Quizz>(json);
+        initPosition = transform.position;
+        questions = quizz.getAllQuestions();
+        NextQuestion();
     }
 
     void NextQuestion()
     {
-        // currentQuestion = questions[questionIndex];
-        // userAnswer = currentQuestion.answers;
-        // List<string> keys = new List<string>(userAnswer.Keys);
-        // foreach(string key in keys)
-        // {
-        //     userAnswer[key] = false;
-        // }
-  
-        // questionText.text = currentQuestion.label;
-        // InstantiateButtons();
-        // questionIndex++;
+
+        //destroy buttons
+        if(transform.childCount > 0)
+        {
+            foreach (Transform child in transform) {
+                GameObject.Destroy(child.gameObject);
+            }
+        }
+
+        //get new question and set local variables
+        if(questionIndex < questions.Length)
+        {
+            SetQuestion();
+        }
+        else
+        {
+            SetEnding();
+        }
+    }
+
+    void SetQuestion(){
+        currentQuestion = questions[questionIndex];
+
+        //create user answers array
+        userAnswers = new Answer[currentQuestion.answers.Length];
+        int j = 0;
+        foreach(Answer ans in currentQuestion.answers)
+        {
+            Answer newAns = new Answer(ans.answer, false);
+            userAnswers[j] = newAns;
+            j++;
+        }
+
+        //set text
+        questionText.text = currentQuestion.question;
+
+        int i = 1;
+        answerText.text = "";
+        foreach(var ans in userAnswers)
+        {
+            ans.value = false;
+            answerText.text += i.ToString() + " - " + ans.answer + "\n";
+            i++;
+        }
+
+        InstantiateButtons();
+        questionIndex++;
+    }
+
+    void SetEnding()
+    {
+        if(score >= questions.Length/2)
+        {
+            questionText.text = "Bravo, vous avez réussi le QCM!";
+        }
+        else
+        {
+            questionText.text = "Dommage, vous avez raté le QCM!";
+
+        }
+
+        answerText.text  = "Vous avez un score de " + score + "/" + questions.Length;
     }
 
     public void SetAnswer(string answerLabel, bool answer)
     {
-        // foreach(var ans in userAnswer)
-        //     if(ans.Key == answerLabel) 
-        //         userAnswer[ans.Key] = answer; 
+        foreach(var ans in userAnswers)
+            if(ans.answer == answerLabel) 
+                ans.value = answer; 
     }
 
+    //tells if user has correct answer or not
     public void Validate()
     {
-        // if(currentQuestion.isCorrect(userAnswer) == true)
-        // {
-        //     questionText.text = "Bravo!";
-        // }
-        // else
-        // {
-        //     questionText.text = "T'es nul!!";
-        // }
+        string tt = "User: ";
+        foreach(var ans in userAnswers)
+        {
+            tt += ans.value+" ";
+        }
 
-        // StartCoroutine(Countdown(3));
+        tt += "\nGood: ";
+
+        foreach(var ans in currentQuestion.answers)
+        {
+            tt += ans.value+" ";
+        }
+        Debug.Log(tt);
+
+
+        questionText.text = "";
+        if(AreAnswersValid() == true)
+        {
+            answerText.text = "Bravo!";
+            score++;
+        }
+        else
+        {
+            answerText.text = "T'es nul!";
+        }
+
+        StartCoroutine(Countdown(3));
+    }
+
+    
+    bool AreAnswersValid()
+    {
+        foreach(Answer a in currentQuestion.answers)
+            foreach(Answer ua in userAnswers)
+                if(a.answer == ua.answer)
+                    if(a.value != ua.value)
+                        return false;
+
+        
+        return true;
     }
 
     void InstantiateButtons()
     {
-        //  foreach (Transform child in transform) {
-        //     GameObject.Destroy(child.gameObject);
-        // }
-        // //int canvasLength = canvas.x;
-        // float testx = 0;
-        // foreach(var ans in userAnswer)
-        // {
-        //     GameObject btn = Instantiate(button, transform.position + new Vector3(testx, 0, 0), Quaternion.identity);
-        //     btn.GetComponentInChildren<QuizzBuzz>().answerLabel = ans.Key;
-        //     btn.transform.parent = transform;
+        
+        transform.position = initPosition;
+        float offset = 0;
+        int i = 1;
 
-        //     testx += 0.2f;
-        // }
+        //instantiate buttons for each answer
+        foreach(var ans in userAnswers)
+        {
+            GameObject btn = Instantiate(button, transform.position + new Vector3(offset, 0, 0), Quaternion.identity *  Quaternion.Euler (80f, 0f, 0f));
+            btn.GetComponentInChildren<QuizzBuzz>().answerLabel = ans.answer;
+            btn.GetComponentInChildren<QuizzBuzz>().number = i;
+            btn.transform.parent = transform;
+            transform.position = transform.position + new Vector3((offset*-1)/i, 0, 0);
+            Vector3 rot = btn.transform.rotation.eulerAngles;
+            rot = new Vector3(rot.x+180,rot.y,rot.z);
+            btn.transform.rotation = Quaternion.Euler(rot);
+            
+            i++;
+            offset += 0.25f;
+        }
     }
 
 
-    // private IEnumerator Countdown(float duration)
-    // {
-    //     float normalizedTime = 0;
-    //     while(normalizedTime <= 1f)
-    //     {
-    //         normalizedTime += Time.deltaTime / duration;
-    //         yield return null;
-    //     }
-    //     NextQuestion();
-    // }
+
+    //countdown to next question
+    private IEnumerator Countdown(float duration)
+    {
+        float normalizedTime = 0;
+        while(normalizedTime <= 1f)
+        {
+            normalizedTime += Time.deltaTime / duration;
+            yield return null;
+        }
+        NextQuestion();
+    }
 }

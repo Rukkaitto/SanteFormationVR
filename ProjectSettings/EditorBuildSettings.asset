@@ -9,8 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/LucasScene.unity
     guid: 99cfa66499486144c968c145a127ba75
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/CedricScene.unity
     guid: 83e6f4b8c2dd4534798bc2c50336ef36
+=======
+    path: Assets/Scenes/MCQScene.unity
+    guid: eabd2bae44bf4484ab1b14d73f6a169d
+>>>>>>> cc9f7b9f4a4dabea01c083ffb587cffc085c143b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 335960379979ec94d8dced0121037d8b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: bf03a37a0b1a5a045ab1888dbad541c3, type: 2}
