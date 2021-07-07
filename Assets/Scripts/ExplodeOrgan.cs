@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class ExplodeOrgan : MonoBehaviour
 {
-    private Transform _currentOrgan;
+    private GameObject _currentOrgan;
     private bool _isExploded = false;
-    public float spreadFactor = 0.3f;
+    public float spreadFactor = 0.0001f;
 
     void Start()
     {
@@ -20,22 +20,32 @@ public class ExplodeOrgan : MonoBehaviour
         
         if (!_isExploded)
         {
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            gameObject.GetComponent<SphereCollider>().enabled = false;
+            gameObject.GetComponent<OVRGrabbable>().enabled = false;
 
-            _currentOrgan.GetComponent<SphereCollider>().enabled = false;
-            _currentOrgan.GetComponent<OVRGrabbable>().enabled = false;
-            
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+
             foreach (Transform obj3d in transform)
             {
                 GameObject model = obj3d.GetChild(0).gameObject;
 
-                Vector3 randomVector = Vector3.ClampMagnitude(UnityEngine.Random.insideUnitSphere * 100, spreadFactor);
-                model.transform.position += new Vector3(randomVector.x, randomVector.y, randomVector.z);
+                Vector3 randomInSphere = UnityEngine.Random.insideUnitSphere * 2.5f;
+                Debug.Log(UnityEngine.Random.insideUnitSphere);
+                Vector3 dest = model.transform.position + new Vector3(randomInSphere.x, randomInSphere.y, randomInSphere.z);
 
-                model.gameObject.AddComponent<SphereCollider>();
+                StartCoroutine("Lerp", new object[3]{ model, dest, 10f});
 
-                model.gameObject.AddComponent<OVRGrabbable>();
+                MeshCollider collider = model.AddComponent<MeshCollider>();
+                collider.convex = true;
 
-                model.gameObject.AddComponent<Rigidbody>().isKinematic = true;
+                Rigidbody rigidbody = model.AddComponent<Rigidbody>();
+                rigidbody.isKinematic = true;
+
+
+                OVRGrabbable grap = model.AddComponent<OVRGrabbable>();
+                grap.enabled = true;
+                grap.CustomGrabCollider(collider);
 
                 Debug.Log("Transformation modifiee !");
             }
@@ -45,6 +55,17 @@ public class ExplodeOrgan : MonoBehaviour
         _isExploded = true;
     }
 
+    IEnumerator Lerp(object[] parms)
+    {
+        GameObject model = (GameObject) parms[0];
+        Vector3 destination = (Vector3) parms[1];
+        float speed = (float) parms[2];
+
+        model.transform.position = Vector3.Lerp(model.transform.position, destination, Time.deltaTime * speed);
+        Debug.Log("Bouge !");
+        yield return null;
+    }
+
     public void Join()
     {
         _isExploded = false;
@@ -52,7 +73,7 @@ public class ExplodeOrgan : MonoBehaviour
 
     public void Restart()
     {
-        Debug.Log("Reset Scene !");
+        Debug.Log("Reset Scene !" + SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
