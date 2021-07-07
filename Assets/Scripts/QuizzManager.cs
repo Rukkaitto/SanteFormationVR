@@ -7,7 +7,7 @@ using System;
 
 public class QuizzManager : MonoBehaviour
 {
-    //[HideInInspector]
+    [HideInInspector]
     public Quizz quizz;
 
     public TextAsset data;
