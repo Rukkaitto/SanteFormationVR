@@ -7,6 +7,11 @@ public class LabeledButton : MonoBehaviour
     public string labelText;
     void Start()
     {
-        GetComponentInChildren<TextMesh>().text = labelText;
+        SetText(labelText);
+    }
+
+    public void SetText(string txt)
+    {
+        GetComponentInChildren<TextMesh>().text = txt;
     }
 }
