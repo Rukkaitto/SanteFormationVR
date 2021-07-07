@@ -132,6 +132,7 @@ public class OVRGrabbable : MonoBehaviour
     {
         if (m_grabPoints.Length == 0)
         {
+            Debug.Log("ICI");
             // Get the collider from the grabbable
             Collider collider = this.GetComponent<Collider>();
             if (collider == null)
@@ -156,5 +157,10 @@ public class OVRGrabbable : MonoBehaviour
             // Notify the hand to release destroyed grabbables
             m_grabbedBy.ForceRelease(this);
         }
+    }
+
+    virtual public void CustomGrabCollider(Collider collider)
+    {
+        m_grabPoints = new Collider[1] { collider };
     }
 }
