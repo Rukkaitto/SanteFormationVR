@@ -11,18 +11,25 @@ public class QuizzManager : MonoBehaviour
     public Quizz quizz;
 
     public TextAsset data;
-    int questionIndex = 0;
-    Question currentQuestion;
-    Question[] questions;
-
+    public Transform modelPlaceholder;
     public TMP_Text questionText;
     public TMP_Text answerText;
-    public GameObject canvas;
-    public Answer[] userAnswers;
     public GameObject button; 
-    public float score;
 
+    private Answer[] userAnswers;
+    private int questionIndex = 0;
+    private Question currentQuestion;
+    private Question[] questions;
     private Vector3 initPosition;
+    private GameObject instantiatedGO;
+
+    public float score;
+    [Header("Texts")]
+    public string text_end_win = "Bravo, vous avez réussi le QCM!";
+    public string text_end_lose = "Dommage, vous avez raté le QCM!";
+    public string text_end_score = "Vous avez un score de ";
+    public string text_question_win = "Bonne réponse!";
+    public string text_question_lose = "Mauvaise réponse...";
 
     private void Awake() {
         quizz = JsonUtility.FromJson<Quizz>(data.ToString());
@@ -37,15 +44,6 @@ public class QuizzManager : MonoBehaviour
 
     void NextQuestion()
     {
-
-        //destroy buttons
-        if(transform.childCount > 0)
-        {
-            foreach (Transform child in transform) {
-                GameObject.Destroy(child.gameObject);
-            }
-        }
-
         //get new question and set local variables
         if(questionIndex < questions.Length)
         {
@@ -82,6 +80,8 @@ public class QuizzManager : MonoBehaviour
             i++;
         }
 
+        
+        InstantiateModel(currentQuestion.model);
         InstantiateButtons();
         questionIndex++;
     }
@@ -90,15 +90,15 @@ public class QuizzManager : MonoBehaviour
     {
         if(score >= questions.Length/2)
         {
-            questionText.text = "Bravo, vous avez réussi le QCM!";
+            questionText.text = text_end_win;
         }
         else
         {
-            questionText.text = "Dommage, vous avez raté le QCM!";
+            questionText.text = text_end_lose;
 
         }
 
-        answerText.text  = "Vous avez un score de " + score + "/" + questions.Length;
+        answerText.text  = text_end_score + score + "/" + questions.Length;
     }
 
     public void SetAnswer(string answerLabel, bool answer)
@@ -111,30 +111,15 @@ public class QuizzManager : MonoBehaviour
     //tells if user has correct answer or not
     public void Validate()
     {
-        string tt = "User: ";
-        foreach(var ans in userAnswers)
-        {
-            tt += ans.value+" ";
-        }
-
-        tt += "\nGood: ";
-
-        foreach(var ans in currentQuestion.answers)
-        {
-            tt += ans.value+" ";
-        }
-        Debug.Log(tt);
-
-
         questionText.text = "";
         if(AreAnswersValid() == true)
         {
-            answerText.text = "Bravo!";
+            answerText.text = text_question_win;
             score++;
         }
         else
         {
-            answerText.text = "T'es nul!";
+            answerText.text = text_question_lose;
         }
 
         StartCoroutine(Countdown(3));
@@ -153,27 +138,48 @@ public class QuizzManager : MonoBehaviour
         return true;
     }
 
+    void InstantiateModel(string modelName)
+    {
+        //destroy existing model
+        if(instantiatedGO)
+            Destroy(instantiatedGO);
+        
+        if(modelName != "")
+        {
+            instantiatedGO = Instantiate(Resources.Load("Models/"+modelName, typeof(GameObject)), modelPlaceholder.position + new Vector3(0, 1f, 0), Quaternion.identity) as GameObject;
+            instantiatedGO.transform.parent = modelPlaceholder;
+        }
+    }
+
     void InstantiateButtons()
     {
+        //destroy buttons
+        foreach (Transform child in transform) {
+            Destroy(child.gameObject);
+        }
         
-        transform.position = initPosition;
-        float offset = 0;
-        int i = 1;
 
+        transform.position = initPosition;
+        Vector3 offset = new Vector3(0,0,0);
+        int i = 1;
+        Transform canvas = GameObject.Find("Canvas").transform;
         //instantiate buttons for each answer
         foreach(var ans in userAnswers)
         {
-            GameObject btn = Instantiate(button, transform.position + new Vector3(offset, 0, 0), Quaternion.identity *  Quaternion.Euler (80f, 0f, 0f));
+            GameObject btn = Instantiate(button, transform.position + offset, Quaternion.identity *  transform.rotation);
             btn.GetComponentInChildren<QuizzBuzz>().answerLabel = ans.answer;
             btn.GetComponentInChildren<QuizzBuzz>().number = i;
+
             btn.transform.parent = transform;
-            transform.position = transform.position + new Vector3((offset*-1)/i, 0, 0);
+            transform.position = transform.position + (-offset)/i;
+
+            //get correct rotation of button
             Vector3 rot = btn.transform.rotation.eulerAngles;
             rot = new Vector3(rot.x+180,rot.y,rot.z);
             btn.transform.rotation = Quaternion.Euler(rot);
             
             i++;
-            offset += 0.25f;
+            offset += new Vector3(0.25f,0,0);
         }
     }
 

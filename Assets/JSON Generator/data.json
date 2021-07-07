@@ -1,7 +1,8 @@
 {
     "questions": [
         {
-            "question": "Bonjour, est-ce un QCM en VR?",
+            "question": "Bienvenue, est-ce un QCM en VR?",
+            "model":"heart",
             "answers": [
                 {
                     "answer": "Oui",
@@ -14,69 +15,82 @@
             ]
         },
         {
-            "question": "Le corps est composé de notamment:",
+            "question": "Quel est le poids moyen d’un cerveau adulte ?",
+            "model":"brain",
             "answers": [
                 {
-                    "answer": "un coeur",
+                    "answer": "900 grammes",
+                    "value": "false"
+                },
+                {
+                    "answer": "1,3kg",
                     "value": "true"
                 },
                 {
-                    "answer": "un cerveau",
-                    "value": "true"
-                },
-                {
-                    "answer": "un pied de biche",
+                    "answer": "1,6kg",
                     "value": "false"
                 }
             ]
         },
         {
-            "question": "Qui de ces personnes ont travaillé sur ce projet?",
+            "question": "Combien de neurones contient un cerveau ?",
+            "model":"brain",
             "answers": [
                 {
-                    "answer": "M. Journet",
+                    "answer": "10 millions",
                     "value": "false"
                 },
                 {
-                    "answer": "Valentin",
+                    "answer": "100 millions",
                     "value": "true"
                 },
                 {
-                    "answer": "Cedric",
-                    "value": "true"
-                },
-                {
-                    "answer": "Theo",
-                    "value": "true"
+                    "answer": "100 milliards",
+                    "value": "false"
                 }
             ]
         },
         {
-            "question": "Est-ce la dernière question?",
+            "question": "Concernant les cavités cardiaques, indiquez la ou les proposition(s) exacte(s)",
+            "model":"heart",
             "answers": [
                 {
-                    "answer": "Oui",
+                    "answer": "Les oreillettes servent à l’admission du sang des vaisseaux",
+                    "value": "true"
+                },
+                {
+                    "answer": "Les oreillettes servent à l’émission du sang dans les vaisseaux",
                     "value": "false"
                 },
                 {
-                    "answer": "Non",
+                    "answer": "Les ventricules servent à l’admission du sang des vaisseaux",
+                    "value": "false"
+                },
+                {
+                    "answer": "Les ventricules servent à l’émission du sang dans les vaisseaux",
                     "value": "true"
                 }
+
             ]
         },
         {
-            "question": "Est-ce maintenant la vraie dernière question?",
+            "question": "Les parties droite et gauche du cœur?",
+            "model":"heart",
             "answers": [
                 {
-                    "answer": "Euh oui",
+                    "answer": "Sont séparées par une paroi",
                     "value": "true"
                 },
                 {
-                    "answer": "Je sais pas",
+                    "answer": "Communiquent au niveau des oreillettes",
                     "value": "false"
                 },
                 {
-                    "answer": "Pas du tout!",
+                    "answer": "Communiquent au niveau des ventricules",
+                    "value": "false"
+                },
+                {
+                    "answer": "Communiquent au niveau des valvules",
                     "value": "false"
                 }
             ]
