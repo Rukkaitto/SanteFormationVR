@@ -30,7 +30,7 @@ public class ExplodeOrgan : MonoBehaviour
             {
                 GameObject model = obj3d.GetChild(0).gameObject;
 
-                Vector3 randomInSphere = UnityEngine.Random.insideUnitSphere * 2.5f;
+                Vector3 randomInSphere = UnityEngine.Random.insideUnitSphere * 2f;
                 Debug.Log(UnityEngine.Random.insideUnitSphere);
                 Vector3 dest = model.transform.position + new Vector3(randomInSphere.x, randomInSphere.y, randomInSphere.z);
 
