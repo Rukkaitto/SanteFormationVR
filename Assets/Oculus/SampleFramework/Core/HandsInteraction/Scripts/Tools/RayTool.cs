@@ -30,6 +30,16 @@ namespace OculusSampleFramework
 		[Range(0.0f, 45.0f)] [SerializeField] private float _coneAngleDegrees = 20.0f;
 		[SerializeField] private float _farFieldMaxDistance = 5f;
 
+
+		public GameObject handAnchorLeft, handAnchorRight;
+		public void Awake()
+		{
+
+			handAnchorLeft = GameObject.Find("LeftHandAnchor");
+
+			handAnchorRight = GameObject.Find("RightControllerAnchor");
+		}
+
 		public override InteractableToolTags ToolTags
 		{
 			get
@@ -133,7 +143,16 @@ namespace OculusSampleFramework
 		/// <returns>Proper raycast origin.</returns>
 		private Vector3 GetRayCastOrigin()
 		{
-			return transform.position + MINIMUM_RAY_CAST_DISTANCE * transform.forward;
+			if (IsRightHandedTool)
+			{
+				return handAnchorRight.transform.position + MINIMUM_RAY_CAST_DISTANCE * handAnchorRight.transform.forward;
+			}
+			else
+			{
+				return handAnchorLeft.transform.position + MINIMUM_RAY_CAST_DISTANCE * handAnchorLeft.transform.forward;
+			}
+		
+			//return transform.position + MINIMUM_RAY_CAST_DISTANCE * transform.forward;
 		}
 
 		public override List<InteractableCollisionInfo> GetNextIntersectingObjects()

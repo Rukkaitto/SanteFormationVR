@@ -85,7 +85,8 @@ namespace OculusSampleFramework
 
 		private void Update()
 		{
-			var myPosition = InteractableTool.ToolTransform.position;
+			//var myPosition = InteractableTool.ToolTransform.position;
+			var myPosition = InteractableTool.IsRightHandedTool ? transform.parent.GetComponent<RayTool>().handAnchorRight.transform.position : transform.parent.GetComponent<RayTool>().handAnchorLeft.transform.position;
 			var myForward = InteractableTool.ToolTransform.forward;
 
 			var targetPosition = _focusedTransform != null
