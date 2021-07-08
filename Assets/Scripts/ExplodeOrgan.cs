@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ExplodeOrgan : MonoBehaviour
 {
     private bool _isExploded = false;
-    public float spreadFactor = 0.0001f;
+    public float spreadFactor = 0.3f;
 
     void Start()
     {
@@ -29,18 +29,14 @@ public class ExplodeOrgan : MonoBehaviour
             {
                 GameObject model = obj3d.GetChild(0).gameObject;
 
-                Vector3 randomInSphere = UnityEngine.Random.insideUnitSphere * 2f;
-                Debug.Log(UnityEngine.Random.insideUnitSphere);
-                Vector3 dest = model.transform.position + new Vector3(randomInSphere.x, randomInSphere.y, randomInSphere.z);
+                Vector3 randomInSphere = Vector3.ClampMagnitude(UnityEngine.Random.insideUnitSphere * 5f, spreadFactor);
 
-                StartCoroutine("Lerp", new object[3]{ model, dest, 10f});
+                obj3d.position += randomInSphere;
 
-                MeshCollider collider = model.AddComponent<MeshCollider>();
-                collider.convex = true;
+                MeshCollider collider = model.GetComponent<MeshCollider>();
 
-                Rigidbody rigidbody = model.AddComponent<Rigidbody>();
+                Rigidbody rigidbody = model.GetComponent<Rigidbody>();
                 rigidbody.isKinematic = true;
-
 
                 OVRGrabbable grap = model.AddComponent<OVRGrabbable>();
                 grap.enabled = true;
@@ -52,17 +48,6 @@ public class ExplodeOrgan : MonoBehaviour
             }
 
         _isExploded = true;
-    }
-
-    IEnumerator Lerp(object[] parms)
-    {
-        GameObject model = (GameObject) parms[0];
-        Vector3 destination = (Vector3) parms[1];
-        float speed = (float) parms[2];
-
-        model.transform.position = Vector3.Lerp(model.transform.position, destination, Time.deltaTime * speed);
-        Debug.Log("Bouge !");
-        yield return null;
     }
 
     public void Join()
