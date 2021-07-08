@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
+
 
 public class QuizzManager : MonoBehaviour
 {
@@ -88,6 +90,11 @@ public class QuizzManager : MonoBehaviour
 
     void SetEnding()
     {
+        //destroy buttons
+        foreach (Transform child in transform) {
+            Destroy(child.gameObject);
+        }
+        
         if(score >= questions.Length/2)
         {
             questionText.text = text_end_win;
@@ -195,5 +202,10 @@ public class QuizzManager : MonoBehaviour
             yield return null;
         }
         NextQuestion();
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
