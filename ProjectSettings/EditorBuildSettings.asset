@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MCQScene.unity
     guid: eabd2bae44bf4484ab1b14d73f6a169d
   - enabled: 0
-    path: Assets/Scenes/TonyScene.unity
-    guid: 969321c86f265ef48ba79d91bb9ae378
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 335960379979ec94d8dced0121037d8b, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: bf03a37a0b1a5a045ab1888dbad541c3, type: 2}

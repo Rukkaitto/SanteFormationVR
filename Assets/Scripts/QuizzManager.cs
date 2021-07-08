@@ -25,6 +25,8 @@ public class QuizzManager : MonoBehaviour
     private Vector3 initPosition;
     private GameObject instantiatedGO;
 
+    public AudioSource audioLePerse;
+
     public float score;
     [Header("Texts")]
     public string text_end_win = "Bravo, vous avez réussi le QCM!";
@@ -123,6 +125,7 @@ public class QuizzManager : MonoBehaviour
         {
             answerText.text = text_question_win;
             score++;
+            audioLePerse.Play();
         }
         else
         {
