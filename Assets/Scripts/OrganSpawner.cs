@@ -41,4 +41,12 @@ public class OrganSpawner : MonoBehaviour
             _lastInstantiated.GetComponent<Scalable>().ScaleDown();
         }
     }
+
+    public void ExplodeOrgan()
+    {
+        if(_lastInstantiated)
+        {
+            _lastInstantiated.GetComponent<ExplodeOrgan>().Explode();
+        }
+    }
 }

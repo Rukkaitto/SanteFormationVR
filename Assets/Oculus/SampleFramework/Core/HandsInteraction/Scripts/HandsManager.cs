@@ -172,7 +172,6 @@ namespace OculusSampleFramework
 				return;
 			}
 			Instance = this;
-
 			Assert.IsNotNull(_leftHand);
 			Assert.IsNotNull(_rightHand);
 

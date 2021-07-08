@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ExplodeOrgan : MonoBehaviour
 {
-    private GameObject _currentOrgan;
     private bool _isExploded = false;
     public float spreadFactor = 0.0001f;
 

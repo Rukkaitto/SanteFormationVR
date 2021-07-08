@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2912562167280531786}
   - component: {fileID: 2912562167280531787}
   - component: {fileID: 2912562167280531780}
+  - component: {fileID: 4419899528406224598}
   m_Layer: 0
   m_Name: Brain
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2912562167280531776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.801, y: 0.814, z: -0.298}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children:
   - {fileID: 3450257185800578371}
   - {fileID: 3450257185060678232}
@@ -348,6 +349,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleSpeed: 0.2
+--- !u!114 &4419899528406224598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2912562167280531776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9607c50a3b8c1448501abf5af3622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spreadFactor: 0.0001
 --- !u!1001 &2912562166902074979
 PrefabInstance:
   m_ObjectHideFlags: 0
