@@ -29,6 +29,7 @@ public class Question{
 
     public string question;
     public Answer[] answers;
+    public string model;
 
 
     public Question(string m_question, Answer[] m_answers){
