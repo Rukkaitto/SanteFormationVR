@@ -49,4 +49,12 @@ public class OrganSpawner : MonoBehaviour
             _lastInstantiated.GetComponent<ExplodeOrgan>().Explode();
         }
     }
+
+    public void ResetOrgan()
+    {
+        if (_lastInstantiated)
+        {
+            _lastInstantiated.GetComponent<ExplodeOrgan>().Restart();
+        }
+    }
 }
