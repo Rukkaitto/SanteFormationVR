@@ -39,6 +39,7 @@ namespace OculusSampleFramework
 		private IEnumerator AttachToolsToHands(Transform[] toolObjects, bool isRightHand)
 		{
 			HandsManager handsManagerObj = null;
+
 			while ((handsManagerObj = HandsManager.Instance) == null || !handsManagerObj.IsInitialized())
 			{
 				yield return null;
